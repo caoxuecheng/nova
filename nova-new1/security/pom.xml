@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.onescorpin.nova</groupId>
+    <artifactId>nova</artifactId>
+    <version>0.8.4.1</version>
+  </parent>
+  <properties>
+    <plugin.license.parentRelative>../</plugin.license.parentRelative>
+  </properties>
+  <artifactId>nova-security</artifactId>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>oauth-server</module>
+    <module>security-api</module>
+    <module>security-auth</module>
+    <module>security-auth-simple</module>
+    <module>security-auth-ldap</module>
+    <module>security-auth-file</module>
+    <module>security-auth-nova-local</module>
+    <module>security-auth-nova-rest</module>
+    <module>security-auth-nova-groups</module>
+    <module>security-auth-kerberos</module>
+    <module>security-auth-spark</module>
+    <module>security-auth-cache</module>
+  </modules>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.security</groupId>
+      <artifactId>spring-security-core</artifactId>
+    </dependency>
+  </dependencies>
+</project>

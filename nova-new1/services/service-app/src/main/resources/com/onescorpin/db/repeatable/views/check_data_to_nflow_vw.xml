@@ -1,0 +1,55 @@
+<!--
+  #%L
+  nova-service-app
+  %%
+  Copyright (C) 2017 Onescorpin
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+      http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+  <!-- Postgres does a drop/create instead of a create or replace view.  Because of this it needs to do a drop/cascade -->
+
+  <changeSet id="1" author="ru186002" runOnChange="true" >
+
+    <sql dbms="postgresql">
+      DROP VIEW IF EXISTS CHECK_DATA_TO_NFLOW_VW cascade
+    </sql>
+
+    <createView replaceIfExists="true" viewName="CHECK_DATA_TO_NFLOW_VW">
+      <![CDATA[
+        SELECT NFLOW_ID NFLOW_ID, f2.NAME as NFLOW_NAME, check_nflows.CHECK_DATA_NFLOW_ID as NOVA_NFLOW_ID, f.NAME as NOVA_NFLOW_NAME
+         FROM NFLOW_CHECK_DATA_NFLOWS check_nflows
+         INNER JOIN NFLOW f on f.ID = check_nflows.CHECK_DATA_NFLOW_ID
+         INNER JOIN NFLOW f2 on f2.ID = check_nflows.NFLOW_ID
+         WHERE f.NFLOW_TYPE = 'CHECK'
+         UNION ALL
+         SELECT ID NFLOW_ID,NAME,id, NAME NOVA_NFLOW_NAME from NFLOW
+         WHERE NFLOW_TYPE = 'NFLOW'
+         UNION ALL
+         SELECT f.ID AS NFLOW_ID,f.name AS NFLOW_NAME, f.ID AS NOVA_NFLOW_ID, f.name AS NOVA_NFLOW_NAME
+          FROM NFLOW f
+          WHERE f.NFLOW_TYPE = 'CHECK'
+      ]]>
+    </createView>
+  </changeSet>
+
+
+
+
+
+</databaseChangeLog>

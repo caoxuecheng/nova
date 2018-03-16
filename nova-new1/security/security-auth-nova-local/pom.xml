@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <artifactId>nova-security-auth-nova-local</artifactId>
+  <parent>
+    <groupId>com.onescorpin.nova</groupId>
+    <artifactId>nova-security</artifactId>
+    <version>0.8.4.1</version>
+  </parent>
+  <properties>
+    <plugin.license.parentRelative>../../</plugin.license.parentRelative>
+  </properties>
+
+  <name>UserProvider Authentication</name>
+  <description>Authenticates users by looking them up in the Metadata store.</description>
+
+  <dependencies>
+    <!-- Core dependencies -->
+    <dependency>
+      <groupId>com.google.code.findbugs</groupId>
+      <artifactId>jsr305</artifactId>
+    </dependency>
+
+    <!-- Spring dependencies -->
+    <dependency>
+      <groupId>org.springframework.security</groupId>
+      <artifactId>spring-security-core</artifactId>
+    </dependency>
+
+    <!-- Think Big dependencies -->
+    <dependency>
+      <groupId>com.onescorpin.nova</groupId>
+      <artifactId>nova-metadata-api</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.onescorpin.nova</groupId>
+      <artifactId>nova-security-auth</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.onescorpin.nova</groupId>
+      <artifactId>nova-nflow-manager-api</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.onescorpin.nova</groupId>
+      <artifactId>nova-job-repository-api</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+  </dependencies>
+</project>

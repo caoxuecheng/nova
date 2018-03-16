@@ -1,0 +1,98 @@
+<!--
+  #%L
+  onescorpin-ui-app
+  %%
+  Copyright (C) 2017 Onescorpin
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+      http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="/" />
+    <title>Nova Login</title>
+  <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+
+  <style>
+
+    #top,
+    #bottom {
+      position: fixed;
+      left: 0;
+      right: 0;
+      height: 50%;
+    }
+
+    #top {
+      top: 0;
+      background-color: rgb(52,131,186);
+    }
+
+    #bottom {
+      bottom: 0;
+      background-color: #ffffff;
+    }
+
+    [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+      display: none !important;
+    }
+
+  </style>
+
+</head>
+<!-- login.html -->
+<body  >
+<div id="main" layout="column" layout-align="center center" layout-fill class="ng-cloak" >
+
+<md-content layout-fill>
+  <div id="top"></div>
+  <div id="bottom"></div>
+  <div layout-align="center center" flex layout="column" layout-fill>
+    <md-card ng-controller="LoginController as vm" md-padding style="width:400px;max-width:400px;z-index: 999999;"  flex="nogrow" md-whiteframe="4">
+          <img src="assets/images/nova-logo-orange-200.png" style="width: 200px;align-self: center" class="md-card-image">
+              <md-card-title layout-align="center center">
+                <span class="md-headline">Login</span>
+            </md-card-title>
+        <md-card-content>
+
+        <div ng-show="vm.error" class="alert alert-danger">{{vm.error}}</div>
+        <form name="form" action="/login" role="form" method="post">
+            <div layout="column" flex layout-fill>
+                <md-input-container  ng-class="{ 'has-error': form.password.$dirty && form.password.$error.required }">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" class="form-control" ng-model="vm.username" required />
+                    <span ng-show="form.username.$dirty && form.username.$error.required" class="help-block">Username is required</span>
+                </md-input-container>
+                <md-input-container  ng-class="{ 'has-error': form.password.$dirty && form.password.$error.required }">
+                   <label for="password">Password</label>
+                    <input type="password" name="password" id="password" class="form-control" ng-model="vm.password" required />
+                    <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">Password is required</span>
+                </md-input-container>
+                <div class="form-actions">
+                    <md-button type="submit" class="md-raised md-primary" ng-disabled="form.$invalid || vm.dataLoading" >Login</md-button>
+                </div>
+            </div>
+          <input type="hidden" name="targetUrl" value="{{vm.targetUrl}}">
+        </form>
+            </md-card-content>
+        </md-card>
+  </div>
+</md-content>
+</div>
+</body>
+
+<script data-main="login/main.js" src="bower_components/requirejs/require.js"></script>
+</html>

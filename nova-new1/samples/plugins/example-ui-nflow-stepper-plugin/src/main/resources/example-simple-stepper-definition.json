@@ -1,0 +1,20 @@
+{
+  "description": "Example of a simple nflow stepper plugin",
+  "displayName": "Example Simple Nflow Stepper",
+  "resourceContext":"/example-plugin-1.0",
+  "nflowDetailsTemplateUrl": "/example-plugin-1.0/nflow-details-templates/simple-nflow-details.html",
+  "stepperTemplateUrl": "/example-plugin-1.0/stepper-templates/simple-steps.html",
+  "metadataProperties": [
+    {
+      "name": "examplePluginProperty",
+      "description": "Example Plugin property"
+    },
+    {
+      "name": "anotherProperty",
+      "description": "This is another property"
+    }
+  ],
+  "totalCoreSteps": 1,
+  "type": "EXAMPLE_SIMPLE_NFLOW_STEPPER"
+
+}

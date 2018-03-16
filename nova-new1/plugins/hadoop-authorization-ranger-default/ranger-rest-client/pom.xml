@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <artifactId>nova-hadoop-authorization-ranger-default</artifactId>
+    <groupId>com.onescorpin.nova.plugins</groupId>
+    <version>0.8.4.1</version>
+  </parent>
+  <properties>
+    <plugin.license.parentRelative>../../../</plugin.license.parentRelative>
+  </properties>
+  <modelVersion>4.0.0</modelVersion>
+
+  <artifactId>nova-ranger-rest-client</artifactId>
+
+  <dependencies>
+    <dependency>
+      <artifactId>nova-commons-rest-client</artifactId>
+      <version>${project.version}</version>
+      <groupId>com.onescorpin.nova</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>nova-hadoop-authorization-core</artifactId>
+      <version>${project.version}</version>
+      <groupId>com.onescorpin.nova</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>nova-hadoop-authorization-api</artifactId>
+      <version>${project.version}</version>
+      <groupId>com.onescorpin.nova</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>nova-commons-util</artifactId>
+      <version>${project.version}</version>
+      <groupId>com.onescorpin.nova</groupId>
+    </dependency>
+    <dependency>
+      <groupId>com.googlecode.json-simple</groupId>
+      <artifactId>json-simple</artifactId>
+      <version>1.1</version>
+    </dependency>
+  </dependencies>
+</project>

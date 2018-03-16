@@ -1,0 +1,4 @@
+## Nova Architecture
+ifdef::env-github,env-browser[:outfilesuffix: .adoc]
+
+image:images/data-lake-accelerator-architecture-diagram.png[Nova Architecture]

@@ -1,0 +1,327 @@
+<!--
+  #%L
+  onescorpin-ui-operations-manager
+  %%
+  Copyright (C) 2017 Onescorpin
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+      http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+<div class="nflow-stats">
+  <div layout="column" ng-if="vm.dataLoaded" layout-padding>
+
+
+    <md-card layout-align="center center">
+      <md-card-content layout="column" style="width:100%;">
+        <div layout="row" class="" layout-align="start start">
+          <div flex="100" layout="column" layout-align="center stretch">
+            <div layout="column" layout-align="start start">
+              <div layout="row" layout-align="space-between start" layout-fill>
+                <span class="card-title right-card-title-text">{{vm.timeFrameOptions[vm.timeFrameOptionIndex].label}}</span>
+                <span style="margin-top: 5px;">Date Range: {{vm.minDisplayTime | date: 'MM/dd/yy HH:mm'}} - {{vm.maxDisplayTime | date: 'MM/dd/yy HH:mm'}}</span>
+              </div>
+            </div>
+            <div flex>
+              <md-slider-container >
+                <span class="hint">{{vm.timeFrameOptions[0].label}}</span>
+                <md-slider ng-change="vm.onTimeFrameChanged()" flex ng-model="vm.timeFrameOptionIndex" min="0" max="{{vm.timeFrameOptionIndexLength - 1}}" aria-label="Time Frame"></md-slider>
+                <span class="hint">{{vm.timeFrameOptions[vm.timeFrameOptionIndexLength - 1].label}}</span>
+              </md-slider-container>
+            </div>
+            <label ng-if="vm.isZoomed" class="hint">At custom zoom level, Refresh to reset to '{{vm.timeFrameOptions[vm.timeFrameOptionIndex].label}}'</label>
+          </div>
+          <span flex style="padding-left: 40px"></span>
+          <div layout="column">
+            <div layout="row">
+              <div class="md-media-sm card-media layout-padding-left-right" style="cursor: pointer;" ng-if="!vm.autoRefresh" ng-click="vm.onRefreshButtonClick()">
+                <md-button> Refresh</md-button>
+              </div>
+            </div>
+            <md-switch class="md-primary" md-no-ink aria-label="Auto Refresh" ng-model="vm.autoRefresh" >
+              Auto Refresh
+            </md-switch>
+          </div>
+        </div>
+
+      </md-card-content>
+    </md-card>
+
+    <div ng-if="vm.nflowProcessorErrors.visibleData.length >0">
+      <md-card>
+        <md-toolbar class="md-table-toolbar md-default" layout="column">
+          <div class="md-toolbar-tools">
+            <span>Error Messages</span>
+            <span flex="5"></span>
+            <div flex style="margin-top:25px">
+              <md-input-container flex layout-fill>
+                <label>Filter</label>
+                <input ng-model="vm.nflowProcessorErrorsTable.filter" ng-model-options="{debounce:1000}"/>
+              </md-input-container>
+            </div>
+            <span flex="5"></span>
+            <div layout="column" layout-align="end end">
+              <div layout="row">
+                <md-switch class="md-primary" md-no-ink aria-label="Auto Refresh" ng-model="vm.nflowProcessorErrors.autoRefresh"
+                           ng-change="vm.toggleNflowProcessorErrorsRefresh(vm.nflowProcessorErrors.autoRefresh)">
+                  Auto Refresh: {{vm.nflowProcessorErrors.autoRefreshMessage}}
+                </md-switch>
+                <md-button class="md-icon-button" ng-if="vm.nflowProcessorErrors.autoRefresh == false" ng-click="vm.viewNewNflowProcessorErrors()">
+                  <ng-md-icon icon="refresh"></ng-md-icon>
+                </md-button>
+              </div>
+              <span ng-if="vm.nflowProcessorErrors.newErrorCount >0" class="hint" style="padding-bottom: 10px;margin0--top:-10px;"> {{vm.nflowProcessorErrors.newErrorCount}} new errors exist.</span>
+            </div>
+          </div>
+        </md-toolbar>
+
+        <md-table-container ng-if="vm.nflowProcessorErrors.visibleData.length >0">
+          <table md-table>
+            <thead md-head md-order="vm.nflowProcessorErrorsTable.sortOrder">
+            <tr md-row>
+              <th md-column name="Processor" md-order-by="processorName"><span>Processor</span></th>
+              <th md-column name="Errors" md-order-by="errorMessages"><span>Errors</span></th>
+              <th md-column name="Time" md-order-by="errorMessageTimestamp" md-desc><span>Time</span></th>
+            </tr>
+            </thead>
+            <tbody md-body>
+            <tr md-row
+                ng-repeat="item in vm.nflowProcessorErrors.visibleData | filter: vm.nflowProcessorErrorsTable.filter | orderBy:  vm.nflowProcessorErrorsTable.sortOrder | limitTo: vm.nflowProcessorErrorsTable.rowLimit : (vm.nflowProcessorErrorsTable.page -1) * vm.nflowProcessorErrorsTable.rowLimit">
+              <td md-cell>{{item.processorName}}</td>
+              <td md-cell>{{item.errorMessages}}</td>
+              <td md-cell>{{item.errorMessageTimestamp | date:'HH:mm:ss'}}</td>
+            </tr>
+            </tbody>
+          </table>
+        </md-table-container>
+        <md-table-pagination md-limit="vm.nflowProcessorErrorsTable.rowLimit" md-limit-options="[5,10,15,20,50,100]" md-page="vm.nflowProcessorErrorsTable.page"
+                             md-total="{{vm.nflowProcessorErrors.visibleData.length}}" md-page-select="true" md-boundary-links="false"></md-table-pagination>
+      </md-card>
+
+    </div>
+
+
+    <div layout="row" layout-sm="column" layout-xs="column">
+      <div layout="column" flex-gt-sm="70" flex-order="1" flex-order-xs="2" flex-order-sm="2">
+        <!-- THE KPIs -->
+        <div layout="row" layout-xs="column" layout-wrap layout-align="space-between center" class="kpi-row">
+
+          <div flex-gt-md="33" flex-gt-xs="50" class="service-wrapper kpi" layout-wrap>
+            <md-card layout-align="center center" class="kpi">
+              <md-card-title layout="column" layout-align="center center" style="width:100%;">
+                <span class="md-display-1">{{vm.eventSuccessKpi.value}}% </span>
+              </md-card-title>
+              <md-card-title-media class="icon">
+                <div class="md-media-sm card-media">
+                  <ng-md-icon icon="{{vm.eventSuccessKpi.icon}}" ng-style="{'fill':vm.eventSuccessKpi.color}" size="50">
+                  </ng-md-icon>
+                </div>
+              </md-card-title-media>
+              <md-card-content layout="column" layout-align="center center">
+                <span class="md-title">Success Rate</span>
+              </md-card-content>
+            </md-card>
+          </div>
+
+          <div flex-gt-md="33" flex-gt-xs="50" class="kpi" layout-wrap>
+            <md-card layout-align="center center">
+              <md-card-title layout="column" layout-align="center center" style="width:100%;">
+                <span class="md-display-1">{{vm.flowRateKpi.value}}/sec </span>
+              </md-card-title>
+              <md-card-title-media class="icon">
+                <div class="md-media-sm card-media">
+                  <ng-md-icon icon="{{vm.flowRateKpi.icon}}" ng-style="{'fill':vm.flowRateKpi.color}" size="50">
+                  </ng-md-icon>
+                </div>
+              </md-card-title-media>
+              <md-card-content layout="column" layout-align="center center">
+                <span class="md-title">Incoming Flow Rate</span>
+              </md-card-content>
+            </md-card>
+          </div>
+
+          <div flex-gt-md="33" flex-gt-xs="50" class="kpi" layout-wrap>
+            <md-card layout-align="center center">
+              <md-card-title layout="column" layout-align="center center" style="width:100%;">
+                <span class="md-display-1">{{vm.avgDurationKpi.value}}</span>
+              </md-card-title>
+              <md-card-title-media class="icon">
+                <div class="md-media-sm card-media">
+                  <ng-md-icon icon="{{vm.avgDurationKpi.icon}}" ng-style="{'fill':vm.avgDurationKpi.color}" size="50">
+                  </ng-md-icon>
+                </div>
+              </md-card-title-media>
+              <md-card-content layout="column" layout-align="center center">
+                <span class="md-title">Flow Duration</span>
+              </md-card-content>
+            </md-card>
+          </div>
+        </div>
+        <!-- END KPIs -->
+
+        <div>
+          <md-card layout-align="start start" style="margin: 0">
+            <md-card-content flex="100" style="width: 100%; padding: 0">
+              <div flex layout="row" layout-align="start end">
+                <span flex ng-if="vm.nflowTimeChartLoading">
+                  <md-progress-linear ng-disabled="false" md-mode="indeterminate"></md-progress-linear>
+                </span>
+                <span flex ng-if="!vm.nflowTimeChartLoading">
+                  <md-progress-linear ng-disabled="true" md-mode="indeterminate"></md-progress-linear>
+                </span>
+              </div>
+              <div layout="row" layout-align="space-between center">
+                <div flex layout="column">
+                  <span class="card-title kpi-header layout-padding-left">Average Flow Rate</span>
+                  <span class="md-caption kpi-subtitle layout-padding-top layout-padding-left" ng-show="vm.zoomEnabled">Zoom in/out and pan left/right to see custom time frame</span>
+                </div>
+                  <md-button ng-click="vm.onResetZoom()" ng-show="vm.zoomEnabled">Reset Zoom</md-button>
+              </div>
+
+              <nvd3 options="vm.nflowChartOptions" data="vm.nflowChartData" api="vm.nflowChartApi"></nvd3>
+
+            </md-card-content>
+          </md-card>
+        </div>
+
+
+        <div>
+          <md-card layout-align="center center" style="margin-left: 0px;margin-right: 0px;">
+            <md-card-content layout-fill>
+
+              <div layout="column" layout-align="start start">
+                <span class="card-title kpi-header">Nflow Processor Metrics</span>
+              </div>
+
+              <md-input-container class="md-block layout-padding-top-bottom">
+                <label class="md-container-ignore label-small layout-padding-top">Processor Metric</label>
+                <md-select ng-model="vm.selectedProcessorStatisticFunction" ng-change="vm.onProcessorChartFunctionChanged()" aria-label="Rule Type">
+                  <md-option value="{{opt}}" ng-repeat="opt in vm.processorStatsFunctions">{{ opt }}</md-option>
+                </md-select>
+              </md-input-container>
+
+              <nvd3 flex options="vm.processorChartOptions" data="vm.processorChartData" api="vm.processorChartApi" config="{deepWatchOptions:true}"></nvd3>
+
+            </md-card-content>
+          </md-card>
+        </div>
+
+
+      </div>
+
+      <div flex-gt-sm="30" flex-order="2" flex-order-xs="1" flex-order-sm="1" class="layout-padding-left" style="margin-top:-5px;">
+        <card-layout class="right-card" >
+          <header-section>
+            <div layout="column">
+              <div class="card-title right-card-title-text">Nflow Details</div>
+            </div>
+            <div layout="column">
+              <span class="item-title" class="layout-padding-top-bottom">{{vm.nflowName}}</span>
+            </div>
+          </header-section>
+          <body-section>
+            <div>
+              <md-divider></md-divider>
+              <md-list layout-fill layout="column" class="list-item-table">
+
+                <md-list-item>
+                  <div layout="column" class="item-column md-list-item-text ">
+                        <span class="item-title" ng-class="{'healthy':vm.nflow.displayStatus == 'COMPLETED' || vm.nflow.displayStatus =='RUNNING'}">
+                         {{vm.nflow.displayStatus}}</span>
+                    <span class="column-title column-title-bottom">Status</span>
+                  </div>
+                  <md-divider></md-divider>
+                </md-list-item>
+
+                <md-list-item>
+                  <div layout="column" class="item-column md-list-item-text ">
+                        {{vm.minDisplayTime | date: 'MM/dd/yy HH:mm'}} - {{vm.maxDisplayTime | date: 'MM/dd/yy HH:mm'}}</span>
+                    <span class="column-title column-title-bottom">Date Range</span>
+                  </div>
+                  <md-divider></md-divider>
+                </md-list-item>
+
+
+
+
+                <md-list-item>
+                  <div layout="column" class="item-column md-list-item-text ">
+                    <span class="item-title">{{vm.summaryStatistics.flowsStarted | number}}</span>
+                    <span class="column-title column-title-bottom">Flows Started</span>
+                  </div>
+                  <md-divider></md-divider>
+                </md-list-item>
+
+                <md-list-item>
+                  <div layout="column" class="item-column md-list-item-text ">
+                    <span class="item-title">{{vm.summaryStatistics.flowsFinished | number}}</span>
+                    <span class="column-title column-title-bottom">Flows Finished</span>
+                  </div>
+                  <md-divider></md-divider>
+                </md-list-item>
+
+                <md-list-item>
+                  <div layout="column" class="item-column md-list-item-text ">
+                    <span class="item-title">{{vm.summaryStatistics.flowsRunning | number}}</span>
+                    <span class="column-title column-title-bottom">Flows Running</span>
+                  </div>
+                  <md-divider></md-divider>
+                </md-list-item>
+
+                <md-list-item>
+                  <div layout="column" class="item-column md-list-item-text ">
+                    <span class="item-title">{{vm.summaryStatistics.flowsStartedPerSecond | number}} / sec</span>
+                    <span class="column-title column-title-bottom">Flows Rate</span>
+                  </div>
+                  <md-divider></md-divider>
+                </md-list-item>
+
+                <md-list-item>
+                  <div layout="column" class="item-column md-list-item-text ">
+                    <span class="item-title">{{vm.avgDurationKpi.value}}</span>
+                    <span class="column-title column-title-bottom">Flow Duration</span>
+                  </div>
+                  <md-divider></md-divider>
+                </md-list-item>
+
+                <md-list-item>
+                  <div layout="column" class="item-column md-list-item-text ">
+                    <span class="item-title">{{vm.eventSuccessKpi.value }}%</span>
+                    <span class="column-title column-title-bottom">Successful Events</span>
+                  </div>
+                  <md-divider></md-divider>
+                </md-list-item>
+
+                <md-list-item>
+                  <div layout="column" class="layout-padding-top-bottom layout-padding-left-right" layout-align="space-between start">
+                    <div class="md-subhead layout-padding-bottom">Links</div>
+                    <div class="layout-padding-left ">
+                       <md-button class="md-primary md-link" ng-click="vm.gotoNflowDetails($event)">Nflow Details</md-button>
+                    </div>
+                  </div>
+                </md-list-item>
+
+
+              </md-list>
+            </div>
+          </body-section>
+        </card-layout>
+      </div>
+
+    </div>
+
+
+  </div>
+  <div ng-if="!vm.dataLoaded" class="kpi-loading" layout-align="center center" layout="column">
+    <md-progress-circular md-mode="indeterminate" md-diameter="60"></md-progress-circular>
+  </div>
+</div>

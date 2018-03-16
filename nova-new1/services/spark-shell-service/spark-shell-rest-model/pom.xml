@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <artifactId>nova-spark-shell-rest-model</artifactId>
+
+  <name>Spark Shell Service REST Model</name>
+
+  <parent>
+    <artifactId>nova-spark-shell-service</artifactId>
+    <groupId>com.onescorpin.nova</groupId>
+    <version>0.8.4.1</version>
+  </parent>
+
+  <properties>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
+    <plugin.license.parentRelative>../../../</plugin.license.parentRelative>
+  </properties>
+
+  <dependencies>
+    <!-- Core -->
+    <dependency>
+      <groupId>com.google.code.findbugs</groupId>
+      <artifactId>jsr305</artifactId>
+    </dependency>
+
+    <!-- Nova -->
+    <dependency>
+      <groupId>com.onescorpin.nova</groupId>
+      <artifactId>nova-field-policy-rest-model</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.onescorpin.nova</groupId>
+      <artifactId>nova-metadata-service-api</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.onescorpin.nova</groupId>
+      <artifactId>nova-schema-discovery-model2</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.onescorpin.nova</groupId>
+      <artifactId>nova-schema-discovery-api</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.onescorpin.nova.integrations</groupId>
+      <artifactId>nova-spark-job-profiler-api</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.onescorpin.nova.plugins</groupId>
+      <artifactId>nova-field-policy-default</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+  </dependencies>
+</project>

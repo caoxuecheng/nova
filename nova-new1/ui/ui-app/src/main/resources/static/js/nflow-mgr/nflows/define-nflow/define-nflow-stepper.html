@@ -1,0 +1,38 @@
+<div>
+  <form name="defineNflowForm">
+    <md-tabs md-dynamic-height md-center-tabs="true"  md-border-bottom md-selected="vm.selectedStepIndex" md-on-select="vm.onStepSelect()" md-no-ink-bar="true" md-no-ink="true" >
+
+      <nova-table-options-stepper ng-if="vm.coreDataModel.templateTableOption != 'NO_TABLE' && vm.coreDataModel.totalPreSteps >0" selected-step-index="vm.selectedStepIndex" steps="vm.steps" step-index="0"
+                                  type="{{vm.coreDataModel.templateTableOption}}" stepper-template-type="pre-step" core-data-model="vm.coreDataModel"></nova-table-options-stepper>
+
+
+     <nova-define-nflow-step title="PreStep" step="vm.steps[0]" ng-if="vm.coreDataModel.templateTableOption != 'NO_TABLE' && vm.coreDataModel.totalPreSteps >0 && vm.coreDataModel.renderTemporaryPreStep">
+
+      </nova-define-nflow-step>
+
+      <nova-define-nflow-step title="General Info" step="vm.steps[vm.coreDataModel.totalPreSteps +0]">
+        <onescorpin-define-nflow-general-info step-index="{{vm.coreDataModel.totalPreSteps + 0}}"></onescorpin-define-nflow-general-info>
+      </nova-define-nflow-step>
+
+      <nova-define-nflow-step title="Nflow Details" step="vm.steps[vm.coreDataModel.totalPreSteps + 1]">
+        <onescorpin-define-nflow-details step-index="{{vm.coreDataModel.totalPreSteps + 1}}"></onescorpin-define-nflow-details>
+      </nova-define-nflow-step>
+
+
+      <nova-table-options-stepper ng-if="vm.coreDataModel.templateTableOption != 'NO_TABLE'" selected-step-index="vm.selectedStepIndex" steps="vm.steps" step-index="vm.getStartingIndex(2)"
+                                  type="{{vm.coreDataModel.templateTableOption}}" stepper-template-type="stepper"  core-data-model="vm.coreDataModel"></nova-table-options-stepper>
+
+
+      <nova-define-nflow-step title="Properties" step="vm.steps[vm.coreDataModel.totalSteps - 3]">
+        <onescorpin-define-nflow-properties step-index="{{vm.coreDataModel.totalSteps - 3}}"></onescorpin-define-nflow-properties>
+      </nova-define-nflow-step>
+      <nova-define-nflow-step title="Access Control" step="vm.steps[vm.coreDataModel.totalSteps - 2]">
+        <onescorpin-define-nflow-access-control step-index="{{vm.coreDataModel.totalSteps - 2}}"></onescorpin-define-nflow-access-control>
+      </nova-define-nflow-step>
+
+      <nova-define-nflow-step title="Schedule" step="vm.steps[vm.coreDataModel.totalSteps - 1]">
+        <onescorpin-define-nflow-schedule step-index="{{vm.coreDataModel.totalSteps - 1}}"></onescorpin-define-nflow-schedule>
+      </nova-define-nflow-step>
+    </md-tabs>
+  </form>
+</div>

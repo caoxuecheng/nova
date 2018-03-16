@@ -1,0 +1,34 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <artifactId>nova-nflow-manager-service</artifactId>
+  <packaging>pom</packaging>
+  <parent>
+    <artifactId>nova-services</artifactId>
+    <groupId>com.onescorpin.nova</groupId>
+    <version>0.8.4.1</version>
+  </parent>
+  <properties>
+    <plugin.license.parentRelative>../../</plugin.license.parentRelative>
+  </properties>
+  <modules>
+    <module>nflow-manager-api</module>
+    <module>nflow-manager-service-api</module>
+    <module>nflow-manager-rest-model</module>
+    <module>nflow-manager-nifi-cache-api</module>
+    <module>nflow-manager-core</module>
+    <module>nflow-manager-precondition-policy-rest-model</module>
+    <module>nflow-manager-precondition-policy</module>
+    <module>nflow-manager-controller</module>
+
+  </modules>
+
+
+  <dependencies>
+
+
+  </dependencies>
+
+</project>

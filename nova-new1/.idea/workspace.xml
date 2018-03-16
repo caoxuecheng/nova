@@ -1,0 +1,1798 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e408ab38-698a-4764-88a4-cc0248472cd4" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/plugins/hadoop-authorization-ranger-default/ranger-rest-client/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-standard-services/nifi-standard-services-v1.2-nar/target/" />
+    <ignored path="$PROJECT_DIR$/core/sla/target/" />
+    <ignored path="$PROJECT_DIR$/services/nflow-manager-service/nflow-manager-rest-model/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/spark/spark-job-profiler/spark-job-profiler-spark-v1/target/" />
+    <ignored path="$PROJECT_DIR$/core/operational-metadata/operational-metadata-api/target/" />
+    <ignored path="$PROJECT_DIR$/core/cluster-manager/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/spark/spark-validate-cleanse/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-standard-services/nifi-hadoop-service-bundle/nifi-hadoop-service-v1-nar/target/" />
+    <ignored path="$PROJECT_DIR$/ui/ui-api/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/spark/spark-interpreter/spark-interpreter-app/target/" />
+    <ignored path="$PROJECT_DIR$/services/field-policy-service/field-policy-core/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/jira/jira-rest-client/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/spark/spark-job-profiler/spark-job-profiler-core/target/" />
+    <ignored path="$PROJECT_DIR$/services/service-app-api/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-standard-services/nifi-core-service-bundle/nifi-core-service-v1.2-nar/target/" />
+    <ignored path="$PROJECT_DIR$/core/classname-change/target/" />
+    <ignored path="$PROJECT_DIR$/services/alerts-service/alerts-controller/target/" />
+    <ignored path="$PROJECT_DIR$/services/metadata-service/metadata-service-api/target/" />
+    <ignored path="$PROJECT_DIR$/services/jms-service/jms-service-api/target/" />
+    <ignored path="$PROJECT_DIR$/metadata/metadata-core/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-rest/nifi-rest-client/nifi-rest-client-v1.1/target/" />
+    <ignored path="$PROJECT_DIR$/commons/commons-spark/commons-spark-2.0/target/" />
+    <ignored path="$PROJECT_DIR$/metadata/target/" />
+    <ignored path="$PROJECT_DIR$/metadata/metadata-modeshape/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-rest/nifi-rest-client/nifi-rest-client-v1.2/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/spark/spark-job-cleanup/spark-job-cleanup-spark-v1/target/" />
+    <ignored path="$PROJECT_DIR$/plugins/jms-service-activemq/target/" />
+    <ignored path="$PROJECT_DIR$/commons/commons-spark/commons-scala-api/target/" />
+    <ignored path="$PROJECT_DIR$/core/kerberos/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-hadoop-bundle/nifi-hadoop-bundle-v1.2-nar/target/" />
+    <ignored path="$PROJECT_DIR$/samples/plugins/example-ui-nflow-stepper-plugin/target/" />
+    <ignored path="$PROJECT_DIR$/services/metadata-service/metadata-rest-controller/target/" />
+    <ignored path="$PROJECT_DIR$/commons/commons-spark/commons-spark-1.6/target/" />
+    <ignored path="$PROJECT_DIR$/plugins/sla-metrics-default/target/" />
+    <ignored path="$PROJECT_DIR$/services/metadata-service/metadata-rest-model/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-framework/nifi-framework-v1/target/" />
+    <ignored path="$PROJECT_DIR$/plugins/service-monitor-pipeline-db/target/" />
+    <ignored path="$PROJECT_DIR$/core/classname-change/classname-change-core/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-standard-services/nifi-core-service-api/target/" />
+    <ignored path="$PROJECT_DIR$/samples/plugins/example-module/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-core-bundle/nifi-core-processors/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-rest/nifi-rest-common-util/target/" />
+    <ignored path="$PROJECT_DIR$/core/service-monitor/service-monitor-core/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-security/nifi-security-api/target/" />
+    <ignored path="$PROJECT_DIR$/metadata/metadata-api/target/" />
+    <ignored path="$PROJECT_DIR$/core/sla/sla-core/target/" />
+    <ignored path="$PROJECT_DIR$/core/service-monitor/target/" />
+    <ignored path="$PROJECT_DIR$/plugins/field-policy-default/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/spark/spark-interpreter/spark-interpreter-spark-v2/target/" />
+    <ignored path="$PROJECT_DIR$/plugins/sla-jira/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-provenance-repo-bundle/nifi-provenance-repo-v1/target/" />
+    <ignored path="$PROJECT_DIR$/plugins/ui-sqoop-table-data-processor-template/target/" />
+    <ignored path="$PROJECT_DIR$/core/ui-annotation/ui-annotation-api/target/" />
+    <ignored path="$PROJECT_DIR$/core/field-policy/target/" />
+    <ignored path="$PROJECT_DIR$/core/job-repository/job-repository-api/target/" />
+    <ignored path="$PROJECT_DIR$/security/security-auth-spark/target/" />
+    <ignored path="$PROJECT_DIR$/core/sla/sla-api/target/" />
+    <ignored path="$PROJECT_DIR$/services/audit-logging-service/target/" />
+    <ignored path="$PROJECT_DIR$/plugins/jms-service-amazon-sqs/target/" />
+    <ignored path="$PROJECT_DIR$/services/nflow-manager-service/nflow-manager-api/target/" />
+    <ignored path="$PROJECT_DIR$/plugins/search-elasticsearch-rest/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-provenance-constants/target/" />
+    <ignored path="$PROJECT_DIR$/core/ui-annotation/ui-annotation-core/target/" />
+    <ignored path="$PROJECT_DIR$/commons/commons-spark/commons-spark-repl/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/spark/target/" />
+    <ignored path="$PROJECT_DIR$/commons/commons-spark/commons-spark-shell-api/target/" />
+    <ignored path="$PROJECT_DIR$/services/audit-logging-service/audit-logging-controller/target/" />
+    <ignored path="$PROJECT_DIR$/services/metadata-service/metadata-rest-client-spring/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/spark/spark-shell-client/spark-shell-client-v2/target/" />
+    <ignored path="$PROJECT_DIR$/plugins/hadoop-authorization-ranger-default/target/" />
+    <ignored path="$PROJECT_DIR$/samples/plugins/example-auth-custom/target/" />
+    <ignored path="$PROJECT_DIR$/core/kerberos/kerberos-core/target/" />
+    <ignored path="$PROJECT_DIR$/commons/commons-util/target/" />
+    <ignored path="$PROJECT_DIR$/core/ui-annotation/target/" />
+    <ignored path="$PROJECT_DIR$/commons/commons-spark/target/" />
+    <ignored path="$PROJECT_DIR$/ui/ui-app/target/" />
+    <ignored path="$PROJECT_DIR$/services/audit-logging-service/audit-logging-rest-model/target/" />
+    <ignored path="$PROJECT_DIR$/plugins/target/" />
+    <ignored path="$PROJECT_DIR$/install/target/" />
+    <ignored path="$PROJECT_DIR$/install/install-rpm/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/spark/spark-job-profiler/spark-job-profiler-api/target/" />
+    <ignored path="$PROJECT_DIR$/security/security-auth-file/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/spark/spark-interpreter/target/" />
+    <ignored path="$PROJECT_DIR$/commons/commons-spark/commons-scala-2.10/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/spark/spark-shell-client/target/" />
+    <ignored path="$PROJECT_DIR$/services/nflow-manager-service/nflow-manager-precondition-policy/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-core-bundle/nifi-core-v1-nar/target/" />
+    <ignored path="$PROJECT_DIR$/core/precondition/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/spark/spark-job-cleanup/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/spark/spark-job-profiler/spark-job-profiler-tests/target/" />
+    <ignored path="$PROJECT_DIR$/core/cluster-manager/cluster-manager-api/target/" />
+    <ignored path="$PROJECT_DIR$/plugins/search-elasticsearch/target/" />
+    <ignored path="$PROJECT_DIR$/plugins/service-monitor-ambari/target/" />
+    <ignored path="$PROJECT_DIR$/core/operational-metadata/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-standard-services/nifi-spark-service-bundle/nifi-spark-service-v1-nar/target/" />
+    <ignored path="$PROJECT_DIR$/core/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-standard-services/nifi-core-service-bundle/nifi-core-service/target/" />
+    <ignored path="$PROJECT_DIR$/services/nflow-manager-service/nflow-manager-precondition-policy-rest-model/target/" />
+    <ignored path="$PROJECT_DIR$/services/operational-metadata-service/operational-metadata-integration-service/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/input-format/target/" />
+    <ignored path="$PROJECT_DIR$/commons/commons-rest-client/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/spark/spark-job-profiler/spark-job-profiler-spark-v2/target/" />
+    <ignored path="$PROJECT_DIR$/services/upgrade-service/target/" />
+    <ignored path="$PROJECT_DIR$/core/job-repository/job-repository-core/target/" />
+    <ignored path="$PROJECT_DIR$/services/scheduler-service/scheduler-rest-model/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-provenance-repo-bundle/nifi-provenance-repo-v1.2/target/" />
+    <ignored path="$PROJECT_DIR$/core/hadoop-authorization/hadoop-authorization-core/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-core-bundle/nifi-merge-table-processor-v1/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/jira/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/spark/spark-job-cleanup/spark-job-cleanup-app/target/" />
+    <ignored path="$PROJECT_DIR$/security/security-auth-simple/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-framework/nifi-framework-api/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-standard-services/nifi-standard-services-nar/target/" />
+    <ignored path="$PROJECT_DIR$/services/field-policy-service/field-policy-rest-model/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-provenance-repo-bundle/nifi-provenance-repo/target/" />
+    <ignored path="$PROJECT_DIR$/security/security-auth-kerberos/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-standard-services/nifi-spark-service-bundle/nifi-spark-service-v1.2-nar/target/" />
+    <ignored path="$PROJECT_DIR$/services/schema-discovery-service/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/spark/spark-job-cleanup/spark-job-cleanup-spark-v2/target/" />
+    <ignored path="$PROJECT_DIR$/services/thrift-proxy-service/thrift-proxy-controller/target/" />
+    <ignored path="$PROJECT_DIR$/services/metadata-service/metadata-jms/target/" />
+    <ignored path="$PROJECT_DIR$/services/service-monitor-service/service-monitor-controller/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-security/target/" />
+    <ignored path="$PROJECT_DIR$/core/cluster-manager/cluster-manager-core/target/" />
+    <ignored path="$PROJECT_DIR$/security/security-auth/target/" />
+    <ignored path="$PROJECT_DIR$/services/metadata-service/target/" />
+    <ignored path="$PROJECT_DIR$/core/operational-metadata/operational-metadata-jpa/target/" />
+    <ignored path="$PROJECT_DIR$/services/scheduler-service/target/" />
+    <ignored path="$PROJECT_DIR$/core/alerts/target/" />
+    <ignored path="$PROJECT_DIR$/services/spark-shell-service/spark-shell-api/target/" />
+    <ignored path="$PROJECT_DIR$/services/scheduler-service/scheduler-api/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-spark-bundle/nifi-spark-v1-nar/target/" />
+    <ignored path="$PROJECT_DIR$/commons/commons-security/target/" />
+    <ignored path="$PROJECT_DIR$/commons/commons-spark/commons-scala-2.11/target/" />
+    <ignored path="$PROJECT_DIR$/services/jms-service/target/" />
+    <ignored path="$PROJECT_DIR$/core/precondition/precondition-api/target/" />
+    <ignored path="$PROJECT_DIR$/commons/commons-test/target/" />
+    <ignored path="$PROJECT_DIR$/ui/target/" />
+    <ignored path="$PROJECT_DIR$/services/audit-logging-service/audit-logging-jpa/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/spark/spark-job-dataquality/spark-job-dataquality-app/target/" />
+    <ignored path="$PROJECT_DIR$/plugins/hadoop-authorization-sentry-default/sentry-client/target/" />
+    <ignored path="$PROJECT_DIR$/core/hadoop-authorization/hadoop-authorization-api/target/" />
+    <ignored path="$PROJECT_DIR$/commons/commons-hive/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-standard-services/nifi-core-service-bundle/nifi-core-service-nar/target/" />
+    <ignored path="$PROJECT_DIR$/commons/target/" />
+    <ignored path="$PROJECT_DIR$/core/alerts/alerts-core/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-framework/target/" />
+    <ignored path="$PROJECT_DIR$/plugins/service-monitor-cloudera/target/" />
+    <ignored path="$PROJECT_DIR$/security/security-auth-cache/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-spark-bundle/nifi-spark-processors/target/" />
+    <ignored path="$PROJECT_DIR$/services/nflow-manager-service/nflow-manager-controller/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-rest/nifi-rest-model/target/" />
+    <ignored path="$PROJECT_DIR$/plugins/schema-discovery-default/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/spark/spark-validate-cleanse/spark-validate-cleanse-spark-v2/target/" />
+    <ignored path="$PROJECT_DIR$/services/schema-discovery-service/schema-discovery-model/target/" />
+    <ignored path="$PROJECT_DIR$/samples/plugins/example-ui-get-file-processor-template/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/spark/spark-validate-cleanse/spark-validate-cleanse-api/target/" />
+    <ignored path="$PROJECT_DIR$/services/security-service/security-controller/target/" />
+    <ignored path="$PROJECT_DIR$/ui/ui-controller/target/" />
+    <ignored path="$PROJECT_DIR$/ui/swagger-ui/target/" />
+    <ignored path="$PROJECT_DIR$/services/audit-logging-service/audit-logging-core/target/" />
+    <ignored path="$PROJECT_DIR$/core/search/search-api/target/" />
+    <ignored path="$PROJECT_DIR$/docs/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/spark/spark-validate-cleanse/spark-validate-cleanse-app/target/" />
+    <ignored path="$PROJECT_DIR$/services/alerts-service/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-elasticsearch-bundle/target/" />
+    <ignored path="$PROJECT_DIR$/services/target/" />
+    <ignored path="$PROJECT_DIR$/commons/commons-nflow-util/target/" />
+    <ignored path="$PROJECT_DIR$/install/install-debian/target/" />
+    <ignored path="$PROJECT_DIR$/core/ui-annotation/ui-annotation-rest-model/target/" />
+    <ignored path="$PROJECT_DIR$/commons/commons-jdbc/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/spark/spark-validate-cleanse/spark-validate-cleanse-spark-v1/target/" />
+    <ignored path="$PROJECT_DIR$/release/target/" />
+    <ignored path="$PROJECT_DIR$/services/job-repository-service/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/spark/spark-shell-client/spark-shell-client-v1/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-spark-bundle/nifi-spark-v1.2-nar/target/" />
+    <ignored path="$PROJECT_DIR$/core/schema-discovery/schema-discovery-api/target/" />
+    <ignored path="$PROJECT_DIR$/services/service-monitor-service/service-monitor-service-api/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-standard-services/nifi-hadoop-service-api/target/" />
+    <ignored path="$PROJECT_DIR$/services/thrift-proxy-service/thrift-proxy-core/target/" />
+    <ignored path="$PROJECT_DIR$/services/spark-shell-service/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/target/" />
+    <ignored path="$PROJECT_DIR$/core/job-repository/target/" />
+    <ignored path="$PROJECT_DIR$/install/install-tar/target/" />
+    <ignored path="$PROJECT_DIR$/samples/plugins/example-module/example-module-ui/target/" />
+    <ignored path="$PROJECT_DIR$/services/service-app/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-rest/nifi-rest-client/target/" />
+    <ignored path="$PROJECT_DIR$/security/security-auth-nova-rest/target/" />
+    <ignored path="$PROJECT_DIR$/security/security-auth-nova-groups/target/" />
+    <ignored path="$PROJECT_DIR$/commons/commons-velocity-api/target/" />
+    <ignored path="$PROJECT_DIR$/commons/commons-test-persistence/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-provenance-repo-bundle/nifi-provenance-repo-v1.2-nar/target/" />
+    <ignored path="$PROJECT_DIR$/plugins/service-monitor-activemq/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-core-bundle/nifi-merge-table-processor-v1.2/target/" />
+    <ignored path="$PROJECT_DIR$/security/security-auth-ldap/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/spark/spark-job-profiler/spark-job-profiler-model/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-rest/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-standard-services/nifi-hadoop-service-bundle/nifi-hadoop-service/target/" />
+    <ignored path="$PROJECT_DIR$/services/scheduler-service/scheduler-core/target/" />
+    <ignored path="$PROJECT_DIR$/security/oauth-server/target/" />
+    <ignored path="$PROJECT_DIR$/services/field-policy-service/target/" />
+    <ignored path="$PROJECT_DIR$/commons/commons-spark/commons-spark-api/target/" />
+    <ignored path="$PROJECT_DIR$/plugins/service-monitor-cloudera/service-monitor-cloudera-tba/target/" />
+    <ignored path="$PROJECT_DIR$/services/spark-shell-service/spark-shell-rest-model/target/" />
+    <ignored path="$PROJECT_DIR$/core/schema-discovery/schema-discovery-rdbms/target/" />
+    <ignored path="$PROJECT_DIR$/services/nflow-manager-service/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/input-format/input-format-omniture/target/" />
+    <ignored path="$PROJECT_DIR$/security/security-api/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-rest/nifi-rest-client/nifi-rest-client-v1/target/" />
+    <ignored path="$PROJECT_DIR$/services/spark-shell-service/spark-shell-controller/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-rest/nifi-rest-client/nifi-rest-client-api/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-rest/nifi-rest-common-api/target/" />
+    <ignored path="$PROJECT_DIR$/services/scheduler-service/scheduler-quartz/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-standard-services/nifi-spark-service-bundle/nifi-spark-service/target/" />
+    <ignored path="$PROJECT_DIR$/samples/plugins/example-module/example-module-services/target/" />
+    <ignored path="$PROJECT_DIR$/core/schema-discovery/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/target/" />
+    <ignored path="$PROJECT_DIR$/samples/plugins/target/" />
+    <ignored path="$PROJECT_DIR$/plugins/service-monitor-cloudera/service-monitor-cloudera-service/target/" />
+    <ignored path="$PROJECT_DIR$/services/job-repository-service/job-repository-rest-model/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-standard-services/target/" />
+    <ignored path="$PROJECT_DIR$/services/security-service/security-rest-model/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-elasticsearch-bundle/nifi-elasticsearch-v1-nar/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-standard-services/nifi-spark-service-api/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-elasticsearch-bundle/nifi-elasticsearch-processors/target/" />
+    <ignored path="$PROJECT_DIR$/services/nflow-manager-service/nflow-manager-service-api/target/" />
+    <ignored path="$PROJECT_DIR$/plugins/service-monitor-nova-cluster/target/" />
+    <ignored path="$PROJECT_DIR$/core/search/target/" />
+    <ignored path="$PROJECT_DIR$/samples/target/" />
+    <ignored path="$PROJECT_DIR$/plugins/search-solr/target/" />
+    <ignored path="$PROJECT_DIR$/core/classname-change/classname-change-api/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/spark/spark-validate-cleanse/spark-validate-cleanse-model/target/" />
+    <ignored path="$PROJECT_DIR$/services/nflow-manager-service/nflow-manager-core/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-core-bundle/nifi-core-v1.2-nar/target/" />
+    <ignored path="$PROJECT_DIR$/services/audit-logging-service/audit-logging-api/target/" />
+    <ignored path="$PROJECT_DIR$/core/hadoop-authorization/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-standard-services/nifi-core-service-bundle/target/" />
+    <ignored path="$PROJECT_DIR$/commons/commons-velocity-core/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/spark/spark-validate-cleanse/spark-validate-cleanse-core/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-core-bundle/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/spark/spark-shell-client/spark-shell-client-app/target/" />
+    <ignored path="$PROJECT_DIR$/core/field-policy/field-policy-api/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/spark/spark-job-profiler/spark-job-profiler-app/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-hadoop-bundle/nifi-hadoop-bundle-v1-nar/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/spark/spark-job-dataquality/spark-job-dataquality-spark-v2/target/" />
+    <ignored path="$PROJECT_DIR$/commons/commons-jpa/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-hadoop-bundle/nifi-hadoop-processors/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-provenance-model/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-standard-services/nifi-spark-service-bundle/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-hadoop-bundle/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/spark/spark-job-dataquality/target/" />
+    <ignored path="$PROJECT_DIR$/services/schema-discovery-service/schema-discovery-controller/target/" />
+    <ignored path="$PROJECT_DIR$/services/field-policy-service/field-policy-controller/target/" />
+    <ignored path="$PROJECT_DIR$/services/security-service/target/" />
+    <ignored path="$PROJECT_DIR$/services/scheduler-service/scheduler-controller/target/" />
+    <ignored path="$PROJECT_DIR$/commons/commons-rest-model/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-provenance-repo-bundle/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/spark/spark-interpreter/spark-interpreter-spark-v1/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-standard-services/nifi-hadoop-service-bundle/target/" />
+    <ignored path="$PROJECT_DIR$/security/target/" />
+    <ignored path="$PROJECT_DIR$/plugins/hadoop-authorization-ranger-default/hadoop-authorization-ranger/target/" />
+    <ignored path="$PROJECT_DIR$/services/spark-shell-service/spark-shell-core/target/" />
+    <ignored path="$PROJECT_DIR$/core/sla/sla-rest-model/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-spark-bundle/target/" />
+    <ignored path="$PROJECT_DIR$/plugins/sla-email/target/" />
+    <ignored path="$PROJECT_DIR$/commons/commons-spark/commons-spark-shell-v2/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-security/nifi-security-v1/target/" />
+    <ignored path="$PROJECT_DIR$/services/operational-metadata-service/target/" />
+    <ignored path="$PROJECT_DIR$/services/nflow-manager-service/nflow-manager-nifi-cache-api/target/" />
+    <ignored path="$PROJECT_DIR$/security/security-auth-nova-local/target/" />
+    <ignored path="$PROJECT_DIR$/commons/commons-spark/commons-spark-shell-v1/target/" />
+    <ignored path="$PROJECT_DIR$/services/alerts-service/alerts-model/target/" />
+    <ignored path="$PROJECT_DIR$/services/thrift-proxy-service/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-provenance-repo-bundle/nifi-provenance-repo-v1-nar/target/" />
+    <ignored path="$PROJECT_DIR$/core/alerts/alerts-api/target/" />
+    <ignored path="$PROJECT_DIR$/services/job-repository-service/job-repository-controller/target/" />
+    <ignored path="$PROJECT_DIR$/services/service-monitor-service/target/" />
+    <ignored path="$PROJECT_DIR$/core/kerberos/kerberos-test-client/target/" />
+    <ignored path="$PROJECT_DIR$/metadata/metadata-persistence/target/" />
+    <ignored path="$PROJECT_DIR$/core/service-monitor/service-monitor-api/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-rest/nifi-flow-visitor-model/target/" />
+    <ignored path="$PROJECT_DIR$/plugins/hadoop-authorization-sentry-default/hadoop-authorization-sentry/target/" />
+    <ignored path="$PROJECT_DIR$/core/search/search-rest-model/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/nifi/nifi-nar-bundles/nifi-standard-services/nifi-hadoop-service-bundle/nifi-hadoop-service-v1.2-nar/target/" />
+    <ignored path="$PROJECT_DIR$/plugins/precondition-default/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/spark/spark-job-dataquality/spark-job-dataquality-spark-v1/target/" />
+    <ignored path="$PROJECT_DIR$/plugins/hadoop-authorization-sentry-default/target/" />
+    <ignored path="$PROJECT_DIR$/plugins/service-monitor-nifi/target/" />
+    <ignored path="$PROJECT_DIR$/integrations/spark/spark-job-profiler/target/" />
+    <ignored path="$PROJECT_DIR$/services/operational-metadata-service/operational-metadata-rest-model/target/" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <ignored path="$PROJECT_DIR$/plugins/service-monitor-impala/target/" />
+    <ignored path="$PROJECT_DIR$/plugins/service-monitor-novadataservice/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="nova" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="DataServiceStatusCheckConfiguration.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/config/DataServiceStatusCheckConfiguration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="39" column="41" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataServiceStatusCheck.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/check/DataServiceStatusCheck.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JobAction.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/services/job-repository-service/job-repository-rest-model/src/main/java/com/onescorpin/jobrepo/repository/rest/model/JobAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.40380314">
+              <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GeneralAPIClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/util/GeneralAPIClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/util/MyException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+              <folding>
+                <element signature="e#866#867#0" expanded="false" />
+                <element signature="e#891#892#0" expanded="false" />
+                <element signature="e#1018#1019#0" expanded="false" />
+                <element signature="e#1052#1053#0" expanded="false" />
+                <element signature="e#1214#1215#0" expanded="false" />
+                <element signature="e#1244#1245#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PropertiesObject.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/util/PropertiesObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReadProperties.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/util/ReadProperties.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Token.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/util/Token.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test1.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/test1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="D:/git_workSpace" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="modificationStamps">
+      <map>
+        <entry key="$USER_HOME$/Downloads/azkaban-3.0.0" value="2896112048000" />
+      </map>
+    </option>
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/plugins/service-monitor-nifi/src/main/java/com/onescorpin/servicemonitor/nifi/config/NifiServiceCheckSpringConfiguration.java" />
+        <option value="$PROJECT_DIR$/plugins/service-monitor-nifi/pom.xml" />
+        <option value="$PROJECT_DIR$/plugins/service-monitor-nifi/src/main/java/com/onescorpin/servicemonitor/nifi/ImpalaServiceStatusCheck.java" />
+        <option value="$PROJECT_DIR$/plugins/service-monitor-implala/pom.xml" />
+        <option value="$PROJECT_DIR$/plugins/service-monitor-impala/src/main/java/nifi/config/ImpalaServiceCheckSpringConfiguration.java" />
+        <option value="$PROJECT_DIR$/plugins/service-monitor-impala/src/main/java/com/onescorpin/servicemonitor/impala/config/ImpalaServiceCHeckConfiguration.java" />
+        <option value="$PROJECT_DIR$/plugins/service-monitor-impala/pom.xml" />
+        <option value="$PROJECT_DIR$/plugins/service-monitor-nifi/src/main/java/com/onescorpin/servicemonitor/nifi/config/ImpalaServiceCheckSpringConfiguration.java" />
+        <option value="$PROJECT_DIR$/plugins/service-monitor-impala/src/main/java/com/onescorpin/servicemonitor/impala/ImpalaServiceStatusCheck.java" />
+        <option value="$PROJECT_DIR$/plugins/service-monitor-nifi/src/main/java/com/onescorpin/servicemonitor/nifi/ImpalaServiceStatusChecks.java" />
+        <option value="$PROJECT_DIR$/plugins/service-monitor-novadataservice/pom.xml" />
+        <option value="$PROJECT_DIR$/plugins/service-monitor-impala/src/main/java/com/onescorpin/servicemonitor/impala/check/ImpalaStatusCheck.java" />
+        <option value="$PROJECT_DIR$/plugins/service-monitor-impala/src/main/java/com/onescorpin/servicemonitor/impala/common/DataServiceContext.java" />
+        <option value="$PROJECT_DIR$/plugins/service-monitor-impala/src/main/java/com/onescorpin/servicemonitor/impala/config/ImpalaStatusCheckConfiguration.java" />
+        <option value="$PROJECT_DIR$/plugins/service-monitor-impala/src/main/java/com/onescorpin/servicemonitor/impala/core/ImpalaServiceProcess.java" />
+        <option value="$PROJECT_DIR$/plugins/service-monitor-impala/src/main/java/com/onescorpin/servicemonitor/impala/util/MyException.java" />
+        <option value="$PROJECT_DIR$/plugins/service-monitor-impala/src/main/java/com/onescorpin/servicemonitor/impala/util/PropertiesObject.java" />
+        <option value="$PROJECT_DIR$/plugins/service-monitor-impala/src/main/java/com/onescorpin/servicemonitor/impala/util/ReadProperties.java" />
+        <option value="$PROJECT_DIR$/plugins/service-monitor-impala/src/main/java/com/onescorpin/servicemonitor/impala/util/SocketPortMonitor.java" />
+        <option value="$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/client/DataServiceRestClient.java" />
+        <option value="$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/common/DataServiceContext.java" />
+        <option value="$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/common/InterfaceGroupInfo.java" />
+        <option value="$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/connect/DataBasesConnection.java" />
+        <option value="$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/util/GeneralAPIClient.java" />
+        <option value="$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/util/MyException.java" />
+        <option value="$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/util/PropertiesObject.java" />
+        <option value="$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/util/ReadProperties.java" />
+        <option value="$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/util/Token.java" />
+        <option value="$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/test1.java" />
+        <option value="$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/config/DataServiceStatusCheckConfiguration.java" />
+        <option value="$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/check/DataServiceStatusCheck.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="nova-service-monitor-novadataservice" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="nova-service-monitor-novadataservice" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="nova-service-monitor-impala" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="nova-service-monitor-impala" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Correctness</id>
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Probable bugsCSS</id>
+          </State>
+          <State>
+            <id>Probable bugsJava</id>
+          </State>
+          <State>
+            <id>RELAX NG</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+          <State>
+            <id>XSLT</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Android</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource ProjectPane="true" />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nova" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="D:/new_git" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\我自己\Desktop\nova-new1\nova-new1\plugins\service-monitor-novadataservice\src\main\java\com\onescorpin\servicemonitor\novadataservice" />
+      <recent name="C:\Users\我自己\Desktop\nova-new1\nova-new1\plugins\service-monitor-impala\src\main\java\com\onescorpin\servicemonitor\impala" />
+      <recent name="C:\Users\我自己\Desktop\nova-new1\nova-new1\plugins\service-monitor-impala\src\main\java" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <module name="" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="depsClasspath" value="false" />
+      <setting name="passParentEnv" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="example-auth-custom" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
+    <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e408ab38-698a-4764-88a4-cc0248472cd4" name="Default" comment="" />
+      <created>1514448786134</created>
+      <option name="number" value="Default" />
+      <updated>1514448786134</updated>
+      <workItem from="1514448787773" duration="604000" />
+      <workItem from="1519789456413" duration="3145000" />
+      <workItem from="1519866315737" duration="3313000" />
+      <workItem from="1521020785105" duration="430000" />
+      <workItem from="1521021394933" duration="138000" />
+      <workItem from="1521076601649" duration="702000" />
+      <workItem from="1521077358316" duration="9000" />
+      <workItem from="1521183524545" duration="190000" />
+      <workItem from="1521183781968" duration="11000" />
+      <workItem from="1521184237879" duration="2930000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="11472000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21260683" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31852654" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33955225" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="ConsoleMavenPlugin" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven-2 Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/util/MyException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+          <folding>
+            <element signature="e#866#867#0" expanded="false" />
+            <element signature="e#891#892#0" expanded="false" />
+            <element signature="e#1018#1019#0" expanded="false" />
+            <element signature="e#1052#1053#0" expanded="false" />
+            <element signature="e#1214#1215#0" expanded="false" />
+            <element signature="e#1244#1245#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/util/PropertiesObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/util/ReadProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/util/Token.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/test1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/config/DataServiceStatusCheckConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="41" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/client/DataServiceRestClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <marker date="1519869400342" expanded="true" signature="3711:4124" placeholder="SELECT missi... missingValue" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/check/DataServiceStatusCheck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/util/GeneralAPIClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/util/MyException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+          <folding>
+            <element signature="e#866#867#0" expanded="false" />
+            <element signature="e#891#892#0" expanded="false" />
+            <element signature="e#1018#1019#0" expanded="false" />
+            <element signature="e#1052#1053#0" expanded="false" />
+            <element signature="e#1214#1215#0" expanded="false" />
+            <element signature="e#1244#1245#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/util/PropertiesObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/util/ReadProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/util/Token.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/test1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-nifi/src/main/java/com/onescorpin/servicemonitor/nifi/ImpalaServiceStatusChecks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-nifi/src/main/java/com/onescorpin/servicemonitor/nifi/config/ImpalaServiceCheckSpringConfigurations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-nifi/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="28" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-impala/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-nova-cluster/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-nova-cluster/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-nifi/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-27.142857">
+          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-nifi/src/main/java/com/onescorpin/servicemonitor/nifi/ImpalaServiceStatusChecks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-impala/src/main/java/com/onescorpin/servicemonitor/impala/connect/ImpalaConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-nifi/src/main/java/com/onescorpin/servicemonitor/nifi/config/ImpalaServiceCheckSpringConfigurations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="20" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-impala/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.821428">
+          <caret line="32" column="21" selection-start-line="22" selection-start-column="7" selection-end-line="32" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-impala/src/main/java/com/onescorpin/servicemonitor/impala/check/ImpalaStatusCheck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-impala/src/main/java/com/onescorpin/servicemonitor/impala/common/DataServiceContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-impala/src/main/java/com/onescorpin/servicemonitor/impala/config/ImpalaStatusCheckConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-impala/src/main/java/com/onescorpin/servicemonitor/impala/core/ImpalaServiceProcess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-impala/src/main/java/com/onescorpin/servicemonitor/impala/util/MyException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-impala/src/main/java/com/onescorpin/servicemonitor/impala/util/PropertiesObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-impala/src/main/java/com/onescorpin/servicemonitor/impala/util/ReadProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-impala/src/main/java/com/onescorpin/servicemonitor/impala/util/SocketPortMonitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="22" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/common/DataServiceContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/common/InterfaceGroupInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/connect/DataBasesConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="3" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/client/DataServiceRestClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <marker date="1519869400342" expanded="true" signature="3711:4124" placeholder="SELECT missi... missingValue" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/config/DataServiceStatusCheckConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="41" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/check/DataServiceStatusCheck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/util/GeneralAPIClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/util/MyException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+          <folding>
+            <element signature="e#866#867#0" expanded="false" />
+            <element signature="e#891#892#0" expanded="false" />
+            <element signature="e#1018#1019#0" expanded="false" />
+            <element signature="e#1052#1053#0" expanded="false" />
+            <element signature="e#1214#1215#0" expanded="false" />
+            <element signature="e#1244#1245#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/util/PropertiesObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/util/ReadProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/util/Token.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/service-monitor-novadataservice/src/main/java/com/onescorpin/servicemonitor/novadataservice/test1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/job-repository-service/job-repository-rest-model/src/main/java/com/onescorpin/jobrepo/repository/rest/model/JobAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40380314">
+          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="Copyright.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>scala-sdk-2.10.5</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>example-auth-custom</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.31276298" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: ant:ant:1.6.5</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

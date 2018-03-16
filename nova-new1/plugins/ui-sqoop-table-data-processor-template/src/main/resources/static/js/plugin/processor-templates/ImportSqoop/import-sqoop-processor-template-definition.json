@@ -1,0 +1,5 @@
+{
+  "processorTypes":["com.onescorpin.nifi.v2.sqoop.core.ImportSqoop"],
+  "stepperTemplateUrl":"js/plugin/processor-templates/ImportSqoop/import-sqoop-create.html",
+  "nflowDetailsTemplateUrl":"js/plugin/processor-templates/ImportSqoop/import-sqoop-edit.html"
+}

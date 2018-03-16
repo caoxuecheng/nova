@@ -1,0 +1,48 @@
+version: 1
+
+dn: ou=groups,dc=example,dc=com
+objectclass: top
+objectclass: organizationalUnit
+ou: groups
+
+dn: ou=people,dc=example,dc=com
+objectclass: top
+objectclass: organizationalUnit
+ou: people
+
+
+dn: uid=dladmin,ou=people,dc=example,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Data Lake Admin
+sn: dladmin
+uid: dladmin
+userPassword: onescorpin
+
+dn: uid=test,ou=people,dc=example,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Test User
+sn: Test
+uid: test
+userPassword: user
+
+
+dn: cn=admin,ou=groups,dc=example,dc=com
+objectclass: top
+objectclass: groupOfNames
+cn: admin
+ou: admin
+member: uid=dladmin,ou=people,dc=example,dc=com
+member: uid=test,ou=people,dc=example,dc=com
+
+dn: cn=developer,ou=groups,dc=example,dc=com
+objectclass: top
+objectclass: groupOfNames
+cn: developer
+ou: developer
+member: uid=test,ou=people,dc=example,dc=com

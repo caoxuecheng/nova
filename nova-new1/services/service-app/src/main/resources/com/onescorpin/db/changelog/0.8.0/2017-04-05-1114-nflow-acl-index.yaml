@@ -1,0 +1,47 @@
+databaseChangeLog:
+
+  - changeSet:
+      id: 1
+      author: ru186002
+      changes:
+        - createTable:
+            tableName: NFLOW_ACL_INDEX
+            columns:
+              - column:
+                  name: NFLOW_ID
+                  type: ${uuid.type}
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: PRINCIPAL
+                  type: varchar(255)
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: PRINCIPAL_TYPE
+                  type: varchar(10)
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+        - addForeignKeyConstraint:
+            constraintName: NFLOW_ACL_INDEX_FK1
+            baseColumnNames: NFLOW_ID
+            baseTableName: NFLOW_ACL_INDEX
+            referencedColumnNames: ID
+            referencedTableName: NFLOW
+            deferrable: false
+            initiallyDeferred: false
+            onDelete: RESTRICT
+            onUpdate: RESTRICT
+        - createIndex:
+            indexName: NFLOW_ACL_INDEX_IDX1
+            tableName: NFLOW_ACL_INDEX
+            columns:
+              - column:
+                  name: NFLOW_ID
+              - column:
+                  name: PRINCIPAL
+              - column:
+                  name: PRINCIPAL_TYPE

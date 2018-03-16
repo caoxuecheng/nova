@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <artifactId>nova-spark-job-profiler</artifactId>
+    <groupId>com.onescorpin.nova.integrations</groupId>
+    <version>0.8.4.1</version>
+  </parent>
+
+  <artifactId>nova-spark-job-profiler-api</artifactId>
+
+  <properties>
+    <plugin.license.parentRelative>../../../../</plugin.license.parentRelative>
+  </properties>
+
+  <dependencies>
+    <!--General dependencies -->
+    <dependency>
+      <groupId>com.google.code.findbugs</groupId>
+      <artifactId>jsr305</artifactId>
+      <optional>true</optional>
+    </dependency>
+
+    <!-- Nova dependencies -->
+    <dependency>
+      <groupId>com.onescorpin.nova</groupId>
+      <artifactId>nova-commons-spark-api</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+    <!-- Spark dependencies -->
+    <dependency>
+      <groupId>org.apache.spark</groupId>
+      <artifactId>spark-sql_${scala.binary.version}</artifactId>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+</project>

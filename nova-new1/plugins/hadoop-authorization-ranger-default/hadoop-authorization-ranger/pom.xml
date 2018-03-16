@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <artifactId>nova-hadoop-authorization-ranger-default</artifactId>
+    <groupId>com.onescorpin.nova.plugins</groupId>
+    <version>0.8.4.1</version>
+  </parent>
+  <properties>
+    <plugin.license.parentRelative>../../../</plugin.license.parentRelative>
+  </properties>
+  <modelVersion>4.0.0</modelVersion>
+
+  <artifactId>nova-hadoop-authorization-ranger</artifactId>
+
+  <dependencies>
+
+    <!-- onescorpin Dependency -->
+    <dependency>
+      <artifactId>nova-hadoop-authorization-core</artifactId>
+      <version>${project.version}</version>
+      <groupId>com.onescorpin.nova</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>nova-ranger-rest-client</artifactId>
+      <version>${project.version}</version>
+      <groupId>com.onescorpin.nova.plugins</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>nova-commons-util</artifactId>
+      <version>${project.version}</version>
+      <groupId>com.onescorpin.nova</groupId>
+    </dependency>
+
+    <!-- Hadoop Dependency -->
+
+    <!--dependency>
+      <groupId>org.apache.hadoop</groupId>
+      <artifactId>hadoop-common</artifactId>
+      <version>${hadoop.version}</version>
+      <scope>provided</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>httpclient</artifactId>
+          <groupId>org.apache.httpcomponents</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>jersey-core</artifactId>
+          <groupId>com.sun.jersey</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency-->
+
+    <!--External Library -->
+
+
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>2.4.3</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+            <configuration>
+              <createDependencyReducedPom>false</createDependencyReducedPom>
+              <artifactSet>
+                <includes>
+                  <include>com.onescorpin.nova.plugins:nova-ranger-rest-client</include>
+                </includes>
+              </artifactSet>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

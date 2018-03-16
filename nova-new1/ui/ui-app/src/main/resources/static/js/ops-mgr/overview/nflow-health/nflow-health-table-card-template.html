@@ -1,0 +1,174 @@
+<!--
+  #%L
+  onescorpin-ui-operations-manager
+  %%
+  Copyright (C) 2017 Onescorpin
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+      http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+<card-layout flex header-css="filter-header">
+  <header-section tba-card-filter-header flex layout card-title="vm.cardTitle" page-name="{{vm.pageName}}" view-type="vm.viewType" sort-options="vm.sortOptions"
+                  on-selected-option="vm.selectedTableOption" filter-model="vm.filter" filter-model-options="{debounce:1000}">
+
+  </header-section>
+  <body-section>
+    <md-tabs flex md-selected="vm.tabMetadata.selectedIndex"
+             md-align-tabs="top" layout-fill md-dynamic-height>
+
+      <md-tab ng-repeat="tab in vm.tabs"
+              ng-disabled="tab.disabled"
+              md-on-select="vm.onTabSelected(tab)" flex
+      >
+        <md-tab-label> {{tab.title}}</md-tab-label>
+        <md-tab-body>
+          <md-divider></md-divider>
+          <div ng-hide="vm.viewType != 'list'" ng-show="vm.viewType == 'list'">
+              <md-progress-linear md-mode="indeterminate" ng-show="vm.showProgress"></md-progress-linear>
+            <md-list flex layout-fill class="list-item-table">
+              <md-list-item class="md-secondary overview" dir-paginate="nflow in tab.data.content |itemsPerPage:vm.paginationData.rowsPerPage" total-items="tab.data.total" current-page="tab.currentPage"
+                            pagination-id="tab.title" ng-click="vm.nflowDetails($event,nflow)">
+
+                <div layout="column" layout-fill>
+                  <div class="item-column md-list-item-text item-column-title"
+                       layout-fill flex>
+                           <span class="item-title" title="{{nflow.nflow}}">
+                              {{nflow.nflow}}
+                            </span>
+                  </div>
+                  <div layout="row" layout-fill class="overview-row">
+                    <div flex="20" layout="column" class="item-column md-list-item-text " ng-if="!nflow.stream">
+                                    <span ng-class="{'healthy':nflow.healthText == 'HEALTHY','error':nflow.healthText == 'UNHEALTHY'}">
+                                           <ng-md-icon icon="{{nflow.icon}}" size="20" hide-xs style="height: inherit">
+                                           </ng-md-icon>
+                                      {{nflow.healthText}}
+                                    </span>
+                      <span class="column-title column-title-bottom">
+                               Nflow Health
+                                   </span>
+                    </div>
+                    <div flex="20" layout="column" class="item-column md-list-item-text " ng-if="nflow.stream">
+                                   <span class="orange" ng-if="nflow.stream">
+                                           <ng-md-icon icon="tune" size="20" hide-xs style="height: inherit">
+                                           </ng-md-icon>
+                                     STREAM
+                                    </span>
+                                  <span ng-if="nflow.stream" class="column-title column-title-bottom">{{nflow.runningCount | number}} running</span>
+                    </div>
+                    <div flex="20" layout="column" class="item-column md-list-item-text " >
+
+                                   <span class="item-title-small {{nflow.statusStyle}}">
+                                     {{nflow.displayStatus}}</span>
+                      <span class="column-title column-title-bottom">
+                                     Status
+                                   </span>
+                    </div>
+
+
+                    <div flex="30" layout="column" class="item-column md-list-item-text " ng-if="((!nflow.stream  || (nflow.stream && !nflow.running)))">
+                                   <span class="item-title" ng-if="nflow.lastStatus != 'UNKNOWN'">
+                                      <nova-timer start-time="nflow.timeSinceEndTime" truncated-format="true" add-ago-suffix="true"></nova-timer>
+                                   </span>
+                                   <span class="item-title" ng-if="nflow.lastStatus == 'UNKNOWN'">
+                                    --
+                                   </span>
+                      <span class="column-title column-title-bottom">Since</span>
+                    </div>
+                    <div flex hide-xs layout="column" class="item-column md-list-item-text " ng-if="!nflow.stream">
+                      <span class="item-title" ng-if="nflow.lastStatus != 'UNKNOWN'">{{nflow.runTimeString}}</span>
+                      <span class="item-title" ng-if="nflow.lastStatus == 'UNKNOWN'">--</span>
+                      <span class="column-title column-title-bottom">Last Run Time</span>
+                    </div>
+                  </div>
+                </div>
+                <md-divider ng-if="!$last"></md-divider>
+              </md-list-item>
+              <md-list-item ng-show="vm.loading == false && vm.total ==0">
+                No results found
+              </md-list-item>
+              <md-divider></md-divider>
+              <md-list-item layout-align="end center" layout-row class="pagination-list-item">
+                <dir-pagination-controls pagination-id="tab.title"
+                                         auto-hide="false"
+                                         max-size="5"
+                                         direction-links="true"
+                                         boundary-links="false"
+                                         template-url="js/common/dir-pagination/dirPagination.tpl.html"
+                                         on-page-change="vm.onPaginationChange(newPageNumber)"
+                                         label="Rows per page"
+                                         rows-per-page="vm.paginationData.rowsPerPage"
+                                         rows-per-page-options="vm.paginationData.rowsPerPageOptions"
+                                         class="pagination-row">
+                </dir-pagination-controls>
+              </md-list-item>
+            </md-list>
+          </div>
+          <div ng-hide="vm.viewType != 'table'" ng-show="vm.viewType == 'table'">
+            <md-table-container>
+              <table md-table md-progress="vm.fetchNflowHealthPromise">
+                <thead md-head md-order="vm.paginationData.sort" md-on-reorder="vm.onOrderChange">
+                <tr md-row>
+                  <th md-column name="Nflow" md-order-by="nflow">Nflow</th>
+                  <th md-column name="Health" md-order-by="healthText">Health</th>
+                  <th md-column name="Status" md-order-by="displayStatus">Status</th>
+                  <th md-column name="Since" md-order-by="timeSinceEndTime">Since</th>
+                  <th md-column name="Last Run Time" md-order-by="runTime">Last Run Time</th>
+                </tr>
+                </thead>
+                <tbody md-body>
+                <tr md-row
+                    ng-repeat="nflow in tab.data.content "
+                    ng-click="vm.nflowDetails($event,nflow)">
+                  <td md-cell>{{nflow.nflow}}</td>
+                  <td md-cell>
+                                    <span ng-class="{'healthy':nflow.healthText == 'HEALTHY','unhealthy':nflow.healthText == 'UNHEALTHY'}">
+                                       <ng-md-icon icon="{{nflow.icon}}" size="20"
+                                                   style="{{job.iconstyle}}">
+                                       </ng-md-icon>
+                                       <span>{{nflow.healthText}}</span></span>
+
+                  </td>
+                  <td md-cell>
+                                       <span class="{{nflow.statusStyle}}">
+                                         {{nflow.displayStatus}}
+                                       </span>
+                  </td>
+                  <td md-cell>
+                    <nova-timer start-time="nflow.timeSinceEndTime" truncated-format="true" add-ago-suffix="true" ng-if="(nflow.lastStatus != 'UNKNOWN' && (!nflow.stream || (nflow.stream && !nflow.running)))"></nova-timer>
+                    <span class="item-title" ng-if="nflow.lastStatus == 'UNKNOWN'"> -- </span>
+                  </td>
+                  <td md-cell>
+                    <div ng-if="!nflow.stream">
+                    <span ng-if="nflow.lastStatus != 'UNKNOWN'">{{nflow.runTimeString}}</span>
+                    <span ng-if="nflow.lastStatus == 'UNKNOWN'">--</span>
+                    </div>
+                </tr>
+                </tbody>
+              </table>
+            </md-table-container>
+
+            <md-table-pagination md-limit="vm.paginationData.rowsPerPage" md-page="tab.currentPage" md-total="{{tab.data.total}}" md-on-paginate="vm.onTablePaginationChange"
+                                 md-limit-options="[5,10,20,50]"></md-table-pagination>
+
+          </div>
+
+
+          <div ng-show="vm.loading == true">
+            <md-progress-circular md-mode="indeterminate" md-diameter="25px"></md-progress-circular>
+          </div>
+        </md-tab-body>
+      </md-tab>
+    </md-tabs>
+
+  </body-section>
+</card-layout>

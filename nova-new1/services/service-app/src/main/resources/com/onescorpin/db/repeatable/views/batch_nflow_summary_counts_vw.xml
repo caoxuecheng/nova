@@ -1,0 +1,44 @@
+<!--
+  #%L
+  nova-service-app
+  %%
+  Copyright (C) 2017 Onescorpin
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+      http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+  <changeSet id="2" author="ru186002" runOnChange="true">
+    <createView replaceIfExists="true" viewName="BATCH_NFLOW_SUMMARY_COUNTS_VW">
+      <![CDATA[
+  SELECT
+  f.NFLOW_ID as NFLOW_ID,
+  f.NFLOW_NAME as NFLOW_NAME,
+  count(e2.JOB_EXECUTION_ID) as ALL_COUNT,
+  count(case when e2.status <>'ABANDONED' AND (e2.status = 'FAILED' or e2.EXIT_CODE = 'FAILED') then 1 else null end) as FAILED_COUNT,
+   count(case when e2.status <>'ABANDONED' AND (e2.EXIT_CODE = 'COMPLETED') then 1 else null end) as COMPLETED_COUNT,
+   count(case when e2.status = 'ABANDONED'then 1 else null end) as ABANDONED_COUNT
+  FROM   BATCH_JOB_EXECUTION e2
+  INNER JOIN BATCH_JOB_INSTANCE i on i.JOB_INSTANCE_ID = e2.JOB_INSTANCE_ID
+  INNER JOIN CHECK_DATA_TO_NFLOW_VW f on f.NOVA_NFLOW_ID = i.NFLOW_ID
+  INNER JOIN NFLOW nflow ON nflow.id = f.NFLOW_ID
+  group by f.nflow_id, nflow.IS_STREAM,f.nflow_name
+       ]]>
+    </createView>
+  </changeSet>
+
+</databaseChangeLog>

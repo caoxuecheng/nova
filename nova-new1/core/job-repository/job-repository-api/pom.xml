@@ -1,0 +1,57 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <artifactId>nova-job-repository-api</artifactId>
+
+  <parent>
+    <artifactId>nova-job-repository</artifactId>
+    <groupId>com.onescorpin.nova</groupId>
+    <version>0.8.4.1</version>
+  </parent>
+  <properties>
+    <plugin.license.parentRelative>../../../</plugin.license.parentRelative>
+  </properties>
+
+
+  <dependencies>
+    <dependency>
+      <groupId>com.onescorpin.nova</groupId>
+      <artifactId>nova-security-api</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.onescorpin.nova</groupId>
+      <artifactId>nova-sla-api</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.onescorpin.nova</groupId>
+      <artifactId>nova-operational-metadata-api</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+    <!-- needed just for the DatabaseType Enum .... think about changing this so the jdbc dep is not needed -->
+
+    <dependency>
+      <groupId>com.onescorpin.nova</groupId>
+      <artifactId>nova-commons-jdbc</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>joda-time</groupId>
+      <artifactId>joda-time</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.google.code.findbugs</groupId>
+      <artifactId>jsr305</artifactId>
+      <optional>true</optional>
+    </dependency>
+  </dependencies>
+
+</project>

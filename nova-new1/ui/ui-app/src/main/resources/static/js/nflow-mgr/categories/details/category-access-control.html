@@ -1,0 +1,16 @@
+<ng-form name="vm.categoryAccessControlForm">
+<vertical-section-layout allow-edit="vm.allowEdit && !vm.isNew" section-title="Access Control" on-save-edit="vm.onSave()" on-edit="vm.onEdit()" keep-editable-after-save="true" editable="vm.isEditable" is-valid="vm.isValid">
+  <readonly-section>
+    <div>Category Roles</div>
+    <entity-access-control entity="vm.model" entity-type="category" the-form="vm.categoryAccessControlForm" read-only="true"></entity-access-control>
+    <div>Roles Inherited by Nflows</div>
+    <entity-access-control entity="vm.model" entity-type="category-nflow" allow-owner-change="false" role-memberships-property="nflowRoleMemberships" the-form="vm.categoryAccessControlForm" read-only="true"></entity-access-control>
+  </readonly-section>
+  <editable-section>
+    <div>Category Roles</div>
+    <entity-access-control entity="vm.editModel" entity-type="category" the-form="vm.categoryAccessControlForm"></entity-access-control>
+    <div>Roles Inherited by Nflows</div>
+    <entity-access-control entity="vm.editModel" entity-type="category-nflow" allow-owner-change="false" role-memberships-property="nflowRoleMemberships" the-form="vm.categoryAccessControlForm"></entity-access-control>
+  </editable-section>
+</vertical-section-layout>
+</ng-form>

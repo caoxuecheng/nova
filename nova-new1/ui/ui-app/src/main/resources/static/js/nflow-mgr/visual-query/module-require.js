@@ -1,0 +1,17 @@
+define(['angular',
+        'nova-nflowmgr',
+        'nova-services',
+        'nova-common',
+        'nflow-mgr/visual-query/init-query-engine.directive',
+        'nflow-mgr/visual-query/build-query/build-query.component',
+        'nflow-mgr/visual-query/build-query/connection-dialog/connection-dialog.component',
+        'nflow-mgr/visual-query/services/query-engine-factory.service',
+        'nflow-mgr/visual-query/services/spark/spark-query-engine',
+        'nflow-mgr/visual-query/store/visual-query-store',
+        'nflow-mgr/visual-query/transform-data/transform-data.component',
+        'nflow-mgr/visual-query/transform-data/services/wrangler-data.service',
+        'nflow-mgr/visual-query/transform-data/services/wrangler-table.service',
+        'nflow-mgr/visual-query/transform-data/profile-stats/VisualQueryProfileStats',
+        'nflow-mgr/visual-query/transform-data/visual-query-table/visual-query-painter.service',
+        'nflow-mgr/visual-query/transform-data/visual-query-table/visual-query-table.component'], function () {
+});

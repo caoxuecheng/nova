@@ -1,0 +1,445 @@
+<!--
+  #%L
+  onescorpin-ui-nflow-manager
+  %%
+  Copyright (C) 2017 Onescorpin
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+      http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+<vertical-section-layout section-title="Table Schema & Data Policies" on-save-edit="vm.onSave()" on-edit="vm.onEdit()" on-cancel-edit="vm.onCancelEdit()" allow-edit="vm.allowEdit"
+                         editable="vm.editableSection" keep-editable-after-save="true" the-form="vm.editNflowDataPoliciesForm">
+
+  <readonly-section>
+
+    <div layout="row" class="layout-padding-top-bottom" ng-if="vm.model.table.method != 'EXISTING_TABLE'">
+      <span flex="25" class="property-name">Source Nflow Record Format</span>
+
+      <div flex layout="column">
+        <span>{{vm.model.table.nflowFormat}}</span>
+      </div>
+    </div>
+
+    <div layout="row" class="layout-padding-top-bottom">
+      <span flex="25" class="property-name">Destination Table Name</span>
+
+      <div flex layout="column">
+        <span>{{vm.model.category.systemName}}.{{vm.model.table.tableSchema.name}}</span>
+      </div>
+    </div>
+
+
+    <md-list flex layout-fill class="list-item-table list-condensed">
+
+      <md-list-item>
+        <div layout="row" layout-fill>
+          <div flex="25" class="md-list-item-text hint">
+            Field Name
+          </div>
+          <div flex="10" class="md-list-item-text hint">
+            Domain<br/>Type
+          </div>
+          <div flex="10" class="md-list-item-text hint">
+            Primary
+            <md-tooltip md-direction="top">
+              Indicate this column is the Primary Key for the row
+            </md-tooltip>
+          </div>
+          <!--
+          <div flex="10" class="md-list-item-text hint">
+            Nullable
+            <md-tooltip md-direction="top">
+             Allow null values?
+            </md-tooltip>
+          </div>
+          -->
+          <div flex="10" class="md-list-item-text hint">
+            <span>Created<br/>Date</span>
+            <md-tooltip md-direction="top">
+              Is this field an indicator of when the row was created?
+            </md-tooltip>
+          </div>
+          <div flex="10" class="md-list-item-text hint">
+            <span>Updated<br/>Date</span>
+            <md-tooltip md-direction="top">
+              Is this field an indicator of when the row was updated?
+            </md-tooltip>
+          </div>
+          <div flex="10" class="md-list-item-text hint">
+            Index
+            <md-tooltip md-direction="top">
+              Define what should be sent to "Global Search"
+            </md-tooltip>
+          </div>
+          <div flex="10" class="md-list-item-text hint">
+            Profile
+            <md-tooltip md-direction="top">
+              Should this field be profiled?
+            </md-tooltip>
+          </div>
+          <div flex="15" class="md-list-item-text hint">
+            Standardize <br/>& Validate
+          </div>
+        </div>
+      </md-list-item>
+
+      <md-list-item ng-repeat="policy in vm.model.table.fieldPolicies">
+        <div layout="row" layout-fill>
+          <div flex="25" class="md-list-item-text">
+            <div>{{policy.name | characters: 20}}</div>
+            <div class="hint">{{vm.fieldNameMap[policy.name].derivedDataType | characters: 20}}</div>
+            <md-tooltip md-direction="left" ng-if="vm.fieldNameMap[policy.name].description">
+              {{vm.fieldNameMap[policy.name].description}}
+            </md-tooltip>
+           </div>
+          <div flex="10" class="md-list-item-text">
+            <ng-md-icon ng-if="policy.domainTypeId != null" icon="{{vm.getDomainType(policy.domainTypeId).icon}}" size="32" title="{{vm.getDomainType(policy.domainTypeId).title}}"
+                        ng-style="{'fill':vm.getDomainType(policy.domainTypeId).iconColor}">
+            </ng-md-icon>
+          </div>
+          <div flex="10" class="md-list-item-text ">
+            <ng-md-icon class="primary-color-1" icon="check_box" ng-if="vm.fieldNameMap[policy.name].primaryKey"></ng-md-icon>
+            <ng-md-icon class="primary-color-1" icon="check_box_outline_blank" ng-if="!vm.fieldNameMap[policy.name].primaryKey"></ng-md-icon>
+          </div>
+          <!--
+          <div flex="10" class="md-list-item-text ">
+            <ng-md-icon class="primary-color-1" icon="check_box" ng-if="vm.fieldNameMap[policy.name].nullable"></ng-md-icon>
+          </div>
+          -->
+          <div flex="10" class="md-list-item-text ">
+            <ng-md-icon class="primary-color-1" icon="check_box" ng-if="vm.fieldNameMap[policy.name].createdTracker"></ng-md-icon>
+            <ng-md-icon class="primary-color-1" icon="check_box_outline_blank" ng-if="!vm.fieldNameMap[policy.name].createdTracker"></ng-md-icon>
+          </div>
+          <div flex="10" class="md-list-item-text ">
+            <ng-md-icon class="primary-color-1" icon="check_box" ng-if="vm.fieldNameMap[policy.name].updatedTracker"></ng-md-icon>
+            <ng-md-icon class="primary-color-1" icon="check_box_outline_blank" ng-if="!vm.fieldNameMap[policy.name].updatedTracker"></ng-md-icon>
+          </div>
+          <div flex="10" class="md-list-item-text ">
+            <ng-md-icon class="primary-color-1" icon="check_box" ng-if="policy.index"></ng-md-icon>
+            <ng-md-icon class="primary-color-1" icon="check_box_outline_blank" ng-if="!policy.index"></ng-md-icon>
+          </div>
+          <div flex="10" class="md-list-item-text ">
+            <ng-md-icon class="primary-color-1" icon="check_box" ng-if="policy.profile"></ng-md-icon>
+            <ng-md-icon class="primary-color-1" icon="check_box_outline_blank" ng-if="!policy.profile"></ng-md-icon>
+          </div>
+          <div flex="15" class="md-list-item-text hint">
+            <ul>
+              <li ng-repeat="rule in vm.getAllFieldPolicies(policy)">{{rule.name}}</li>
+            </ul>
+          </div>
+        </div>
+        <md-divider></md-divider>
+      </md-list-item>
+    </md-list>
+
+
+    <div layout="row" class="layout-padding-top-bottom">
+      <span flex class="property-name">Partitions</span>
+    </div>
+
+    <md-list flex layout-fill class="list-item-table list-condensed" ng-if="vm.model.table.partitions.length >0">
+
+      <md-list-item>
+        <div layout="row" layout-fill>
+          <div flex="50" class="md-list-item-text hint">
+            Partition Name
+          </div>
+          <div flex="30" class="md-list-item-text hint">
+            Source Field
+          </div>
+          <div flex="20" class="md-list-item-text hint">
+            Partition Formula
+          </div>
+        </div>
+      </md-list-item>
+
+
+      <md-list-item ng-repeat="field in vm.model.table.partitions">
+        <div layout="row" layout-fill>
+          <div flex="50" class="md-list-item-text">
+            <div>{{field.field}}</div>
+          </div>
+          <div flex="30" class="md-list-item-text">
+            <div>{{field.sourceField}}</div>
+          </div>
+          <div flex="20" class="md-list-item-text">
+            <div>{{field.formula}}</div>
+          </div>
+        </div>
+        <md-divider></md-divider>
+      </md-list-item>
+    </md-list>
+
+    <div layout="row" class="layout-padding-top-bottom" ng-if="vm.model.table.partitions.length ==0">
+      <span flex class="property-name">No Partition Information Exists</span>
+    </div>
+
+    <div layout="row" class="layout-padding-top-bottom" ng-if="vm.model.table.method != 'EXISTING_TABLE'">
+      <span flex="25" class="property-name">Merge Strategy</span>
+
+      <div flex layout="column">
+        <span>{{vm.mergeStrategyDisplayName()}}</span>
+      </div>
+    </div>
+    <div layout="row" class="layout-padding-top-bottom">
+      <span flex="25" class="property-name">Target Format</span>
+      <span>{{vm.model.table.targetFormat}}</span>
+    </div>
+
+    <div layout="row" class="layout-padding-top-bottom">
+      <span flex="25" class="property-name">Compression options</span>
+      <span>{{vm.model.table.options.compressionFormat}}</span>
+    </div>
+
+
+    <div layout="row" class="layout-padding-top-bottom">
+      <span flex="25" class="property-name">Options</span>
+
+      <div flex layout="row" layout-align="start start" layout-wrap="true">
+        <div layout="row">
+          <ng-md-icon class="primary-color-1" icon="check_box" ng-if="vm.model.options.skipHeader"></ng-md-icon>
+          <ng-md-icon class="primary-color-1" icon="check_box_outline_blank" ng-if="!vm.model.options.skipHeader"></ng-md-icon>
+          <span class="property-name">Skip header</span>
+        </div>
+        <!--
+        <div layout="row">
+          <ng-md-icon class="primary-color-1" icon="check_box" ng-if="vm.model.table.options.auditLogging"></ng-md-icon>
+          <ng-md-icon class="primary-color-1" icon="check_box_outline_blank" ng-if="!vm.model.table.options.auditLogging"></ng-md-icon>
+          <span class="property-name">Audit Logging</span>
+        </div>
+        <div layout="row" style="padding-left:10px;">
+          <ng-md-icon class="primary-color-1" icon="check_box" ng-if="vm.model.table.options.encrypt"></ng-md-icon>
+          <ng-md-icon class="primary-color-1" icon="check_box_outline_blank" ng-if="!vm.model.table.options.encrypt"></ng-md-icon>
+          <span class="property-name">Encrypt</span>
+        </div>
+        -->
+      </div>
+    </div>
+
+
+  </readonly-section>
+  <editable-section>
+    <ng-form name="vm.editNflowDataPoliciesForm">
+    <div layout="row" class="layout-padding-top-bottom" ng-if="vm.model.table.method != 'EXISTING_TABLE'">
+      <span flex="25" class="property-name">Source Nflow Record Format</span>
+
+      <div flex layout="column">
+        <span>{{vm.model.table.nflowFormat}}</span>
+      </div>
+    </div>
+
+    <div layout="row" class="layout-padding-top-bottom">
+      <span flex="25" class="property-name">Destination Table Name</span>
+
+      <div flex layout="column">
+        <span>{{vm.model.category.systemName}}.{{vm.model.table.tableSchema.name}}</span>
+      </div>
+    </div>
+
+    <md-list flex layout-fill class="list-item-table list-condensed">
+
+      <md-list-item>
+        <div layout="row" layout-fill>
+          <div flex="25" class="md-list-item-text hint">
+            Field Name
+          </div>
+          <div flex="10" class="md-list-item-text hint">
+            Domain<br/>Type
+          </div>
+          <div flex="10" class="md-list-item-text hint">
+            Primary
+            <md-tooltip md-direction="top">
+              Indicate this column is the Primary Key for the row
+            </md-tooltip>
+          </div>
+          <!--
+          <div flex="10" class="md-list-item-text hint">
+            Nullable
+            <md-tooltip md-direction="top">
+              Allow null values?
+            </md-tooltip>
+          </div>
+          -->
+          <div flex="10" class="md-list-item-text hint">
+            <span>Created<br/>Date</span>
+            <md-tooltip md-direction="top">
+              Is this field an indicator of when the row was created?
+            </md-tooltip>
+          </div>
+          <div flex="10" class="md-list-item-text hint">
+            <span>Updated<br/>Date</span>
+            <md-tooltip md-direction="top">
+              Is this field an indicator of when the row was updated?
+            </md-tooltip>
+          </div>
+          <div flex="10" class="md-list-item-text hint">
+            Index
+            <md-tooltip md-direction="top">
+              Define what should be sent to "Global Search"
+            </md-tooltip>
+            <md-input-container class="md-block" flex-gt-sm>
+              <md-checkbox aria-label="Select All"
+                           ng-checked="vm.indexCheckAll.isChecked"
+                           md-indeterminate="vm.indexCheckAll.isIndeterminate"
+                           ng-click="vm.indexCheckAll.toggleAll()"
+                           style="margin-left:-1px;"></md-checkbox>
+            </md-input-container>
+          </div>
+          <div flex="10" class="md-list-item-text hint">
+            Profile
+            <md-tooltip md-direction="top">
+              Should this field be profiled?
+            </md-tooltip>
+            <md-input-container class="md-block" flex-gt-sm>
+              <md-checkbox aria-label="Select All"
+                           ng-checked="vm.profileCheckAll.isChecked"
+                           md-indeterminate="vm.profileCheckAll.isIndeterminate"
+                           ng-click="vm.profileCheckAll.toggleAll()"
+              style="margin-left:-1px;">
+              </md-checkbox>
+            </md-input-container>
+          </div>
+          <div flex="15" class="md-list-item-text hint">
+            Standardize <br/>& Validate
+          </div>
+        </div>
+      </md-list-item>
+      <div layout="row" layout-fill flex>
+        <span style="margin-top:-10px;" layout-fill flex>
+           <md-divider style="border-top-color:grey"></md-divider>
+        </span>
+      </div>
+
+
+      <md-list-item ng-repeat="policy in vm.editModel.fieldPolicies">
+        <div layout="row" layout-fill>
+          <div flex="25" class="md-list-item-text">
+            <md-input-container class="md-block" flex-gt-sm>
+              <md-button md-no-ink class="md-primary nova-edit-field-button" ng-click="vm.showEditFieldDialog(policy.columnDef)">{{policy.name | characters:20}}</md-button>
+              <div class="hint">{{vm.fieldNameMap[policy.name].derivedDataType}}</div>
+              <md-tooltip md-direction="left" ng-if="policy.columnDef.description">
+                {{policy.columnDef.description}}
+              </md-tooltip>
+            </md-input-container>
+
+          </div>
+          <div flex="10" class="md-list-item-text">
+            <md-select ng-model="policy.domainTypeId" md-selected-html="vm.getDomainTypePlaceholder(policy.domainTypeId)" ng-change="vm.onDomainTypeChange(policy)" style="margin:0;width:70px">
+              <md-option ng-value=""><em>None</em></md-option>
+              <md-option ng-repeat="domainType in vm.availableDomainTypes | orderBy:'title' track by $index" ng-value="domainType.id" aria-label="{{domainType.title}}">
+                <ng-md-icon icon="{{domainType.icon}}" ng-style="{'fill':domainType.iconColor}"></ng-md-icon> {{domainType.title}}
+              </md-option>
+            </md-select>
+            <md-button md-no-ink class="nova-apply-domain-type-button" ng-if="policy.domainTypeId != null" ng-click="vm.onDomainTypeChange(policy)">Reapply</md-button>
+          </div>
+          <div flex="10" class="md-list-item-text ">
+            <md-checkbox ng-model="policy.columnDef.primaryKey" aria-label="Primary Key" ng-change="vm.onChangePrimaryKey()"></md-checkbox>
+          </div>
+          <!--
+          <div flex="10" class="md-list-item-text ">
+            <md-checkbox   ng-model="policy.columnDef.nullable" aria-label="Nullable" ></md-checkbox>
+          </div>
+          -->
+          <div flex="10" class="md-list-item-text ">
+            <md-checkbox ng-model="policy.columnDef.createdTracker" aria-label="Created Tracker"
+                         ng-disabled="!(policy.columnDef.derivedDataType == 'date' || policy.columnDef.derivedDataType == 'timestamp')"></md-checkbox>
+          </div>
+          <div flex="10" class="md-list-item-text ">
+            <md-checkbox ng-model="policy.columnDef.updatedTracker" aria-label="Created Tracker"
+                         ng-disabled="!(policy.columnDef.derivedDataType == 'date' || policy.columnDef.derivedDataType == 'timestamp')"></md-checkbox>
+          </div>
+          <div flex="10" class="md-list-item-text ">
+            <md-checkbox ng-model="policy.index" aria-label="Index" ng-click="vm.indexCheckAll.clicked(!policy.index)"></md-checkbox>
+          </div>
+          <div flex="10" class="md-list-item-text ">
+            <md-checkbox ng-model="policy.profile" aria-label="Profile" ng-click="vm.profileCheckAll.clicked(!policy.index)"></md-checkbox>
+          </div>
+          <div flex="15" class="md-list-item-text hint" layout-align="start center">
+            <div ng-click="vm.showFieldRuleDialog(policy)" style="color:#2D78B1;">
+              <md-button class="icon-btn" style="padding-left:2px;padding-right:2px;">
+                <ng-md-icon icon="add_circle_outline" style="fill:#2D78B1;"></ng-md-icon>
+              </md-button>
+              ADD
+            </div>
+
+            <div ng-if="(policy.standardization != null && policy.standardization.length >0 || policy.validation != null && policy.validation.length >0)" class="orange layout-padding-bottom" style="padding-left:32px;" layout="column">
+              <span ng-if="policy.standardization != null && policy.standardization.length >0">{{policy.standardization.length}} Standardizers</span>
+              <span ng-if="policy.validation != null && policy.validation.length >0">{{policy.validation.length}} Validators</span>
+            </div>
+          </div>
+        </div>
+        <md-divider></md-divider>
+      </md-list-item>
+    </md-list>
+
+
+    <md-input-container class="md-block layout-padding-top-bottom flex-gt-sm condensed" flex-gt-sm="" style="">
+      <label class="label-small md-container-ignore">Merge Strategy</label>
+      <md-radio-group ng-model="vm.editModel.table.targetMergeStrategy" layout="row" layout-wrap="true" class="layout-padding-top" name="targetMergeStrategy" ng-change="vm.onChangeMergeStrategy()">
+        <md-radio-button ng-repeat="strategy in vm.mergeStrategies"
+                         ng-value="strategy.type"
+                         aria-label="{{strategy.name}}"
+                         ng-disabled="strategy.disabled">
+          {{strategy.name}}
+          <div class="hint">{{strategy.hint}}</div>
+        </md-radio-button>
+      </md-radio-group>
+      <div ng-messages="vm.editNflowDataPoliciesForm['targetMergeStrategy'].$error" md-auto-hide="false">
+        <div ng-message="invalidPKOption">A Primary Key must be selected to use this strategy</div>
+        <div ng-message="invalidRollingSyncOption">A Partition must be added to use this strategy</div>
+      </div>
+    </md-input-container>
+
+
+    <md-input-container class="md-block layout-padding-top-bottom flex-gt-sm condensed" flex-gt-sm="" style="">
+      <label class="label-small md-container-ignore">Target Format</label>
+      <md-select ng-model="vm.editModel.table.targetFormat" disabled="true">
+        <md-option ng-repeat="opt in vm.targetFormatOptions" ng-value="opt.value">
+          {{opt.label}}
+        </md-option>
+      </md-select>
+    </md-input-container>
+
+
+    <md-input-container class="md-block layout-padding-top-bottom flex-gt-sm condensed" flex-gt-sm="" style="">
+      <label class="label-small md-container-ignore">Compression options</label>
+      <md-select ng-model="vm.editModel.table.options.compressionFormat" disabled="true">
+        <md-option ng-repeat="opt in vm.compressionOptions track by $index" ng-value="opt">
+          {{opt}}
+        </md-option>
+      </md-select>
+    </md-input-container>
+
+
+    <md-input-container class="md-block layout-padding-top-bottom condensed" style="padding-left:0px;padding-right:0px;">
+      <label class="label-small md-container-ignore">Options</label>
+
+      <div layout="row" class="layout-padding-top ">
+        <md-checkbox ng-model="vm.model.options.skipHeader" aria-label="Skip Header">
+          Skip header row
+        </md-checkbox>
+        <!--
+        <md-checkbox ng-model="vm.editModel.table.options.auditLogging" aria-label="Audit Logging">
+          Audit Logging
+        </md-checkbox>
+        <md-checkbox ng-model="vm.editModel.table.options.encrypt" aria-label="Encrypt">
+          Encrypt
+        </md-checkbox>
+        -->
+      </div>
+    </md-input-container>
+
+    </ng-form>
+  </editable-section>
+
+</vertical-section-layout>

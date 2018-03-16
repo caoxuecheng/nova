@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaCompilerConfiguration">
+    <profile name="Maven 1" modules="nova-spark-shell-client-app,nova-spark-shell-client-v1,nova-spark-shell-client-v2" />
+  </component>
+</project>

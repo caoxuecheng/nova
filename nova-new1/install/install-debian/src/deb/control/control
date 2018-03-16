@@ -1,0 +1,7 @@
+Package: Nova
+Version: ${project.version}
+Section: misc
+Priority: low
+Architecture: all
+Description: Nova
+Maintainer: Think Big

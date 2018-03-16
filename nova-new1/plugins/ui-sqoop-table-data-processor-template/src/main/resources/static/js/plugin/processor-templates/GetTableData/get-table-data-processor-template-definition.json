@@ -1,0 +1,5 @@
+{
+  "processorTypes":["com.onescorpin.nifi.GetTableData","com.onescorpin.nifi.v2.ingest.GetTableData"],
+  "stepperTemplateUrl":"js/plugin/processor-templates/GetTableData/get-table-data-create.html",
+  "nflowDetailsTemplateUrl":"js/plugin/processor-templates/GetTableData/get-table-data-edit.html"
+}

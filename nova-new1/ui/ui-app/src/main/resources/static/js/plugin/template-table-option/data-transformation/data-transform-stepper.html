@@ -1,0 +1,18 @@
+<nova-define-nflow-step title="Build Query" step="getStep(0)" nova-init-query-engine="spark">
+  <onescorpin-visual-query-builder engine="queryEngine" height-offset="144" model="coreDataModel.dataTransformation" step-index="{{getStepIndex(0)}}" ng-if="isStepSelected(0)">
+  </onescorpin-visual-query-builder>
+</nova-define-nflow-step>
+
+<nova-define-nflow-step title="Transform Data" step="getStep(1)">
+  <onescorpin-visual-query-transform engine="queryEngine" field-policies="coreDataModel.table.fieldPolicies" height-offset="144" model="coreDataModel.dataTransformation" step-index="{{getStepIndex(1)}}"
+                                   ng-if="isStepSelected(1) || isStepVisited(1)">
+  </onescorpin-visual-query-transform>
+</nova-define-nflow-step>
+
+<nova-define-nflow-step title="Table" step="getStep(2)">
+  <onescorpin-define-nflow-table ng-if="isStepSelected(2)" step-index="{{getStepIndex(2)}}" can-remove-fields="false" table-locked="true" type-locked="true"></onescorpin-define-nflow-table>
+</nova-define-nflow-step>
+
+<nova-define-nflow-step title="Data Processing" step="getStep(3)">
+  <onescorpin-define-nflow-data-processing step-index="{{getStepIndex(3)}}" default-merge-strategy="SYNC"></onescorpin-define-nflow-data-processing>
+</nova-define-nflow-step>

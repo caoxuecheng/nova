@@ -1,0 +1,25 @@
+#
+# Copyright (c) 2015. Teradata Inc.
+#
+com.onescorpin.nifi.v2.ingest.MergeTable
+com.onescorpin.nifi.v2.ingest.RegisterNflowTables
+com.onescorpin.nifi.v2.ingest.GetTableData
+com.onescorpin.nifi.v2.ingest.UpdateRegistration
+com.onescorpin.nifi.v2.ingest.RouteOnRegistration
+com.onescorpin.nifi.v2.ingest.DropNflowTables
+com.onescorpin.nifi.v2.metadata.TriggerNflow
+com.onescorpin.nifi.v2.metadata.GetNflowMetadata
+#com.onescorpin.nifi.v2.metadata.BeginNflow
+#com.onescorpin.nifi.v2.metadata.TerminateDirectoryNflow
+#com.onescorpin.nifi.v2.metadata.TerminateHiveTableNflow
+com.onescorpin.nifi.v2.metadata.TriggerCleanup
+com.onescorpin.nifi.v2.metadata.PutNflowMetadata
+com.onescorpin.nifi.v2.ingest.StripHeader
+com.onescorpin.nifi.v2.core.watermark.LoadHighWaterMark
+com.onescorpin.nifi.v2.core.watermark.ReleaseHighWaterMark
+com.onescorpin.nifi.v2.init.InitializeNflow
+com.onescorpin.nifi.v2.init.CompleteInitializeNflow
+com.onescorpin.nifi.v2.ingest.CreateElasticsearchBackedHiveTable
+com.onescorpin.nifi.v2.thrift.ExecuteHQLStatement
+
+

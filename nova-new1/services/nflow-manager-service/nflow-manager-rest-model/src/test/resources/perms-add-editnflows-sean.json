@@ -1,0 +1,24 @@
+{
+    "actionSet": {
+        "actions": [
+            {
+                "actions": [
+                    {
+                        "actions": [
+                            {
+                                "systemName": "editNflows"
+                            }
+                        ],
+                        "systemName": "accessNflows"
+                    }
+                ],
+                "systemName": "accessNflowsSupport"
+            }
+        ],
+        "name": "services"
+    },
+    "change": "ADD",
+    "users": [
+        "sean"
+    ]
+}

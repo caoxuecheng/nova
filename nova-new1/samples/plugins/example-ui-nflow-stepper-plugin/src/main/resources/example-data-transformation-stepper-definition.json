@@ -1,0 +1,25 @@
+{
+  "description": "Example nflow stepper with data transformation",
+  "displayName": "Example Data Transformation Nflow Stepper",
+  "resourceContext":"/example-plugin-1.0",
+  "nflowDetailsTemplateUrl": "/example-plugin-1.0/nflow-details-templates/data-transform-nflow-details.html",
+  "stepperTemplateUrl": "/example-plugin-1.0/stepper-templates/data-transform-steps.html",
+  "preStepperTemplateUrl":"/example-plugin-1.0/stepper-templates/pre-steps.html",
+  "preNflowDetailsTemplateUrl":"/example-plugin-1.0/nflow-details-templates/pre-step-nflow-details.html",
+  "metadataProperties": [
+    {
+      "name": "examplePluginProperty",
+      "description": "Example Plugin property"
+    },
+    {
+      "name": "anotherProperty",
+      "description": "This is another property"
+    }
+  ],
+  "totalCoreSteps": 5,
+  "totalPreSteps":1,
+  "type": "EXAMPLE_DATA_TRANSFORM_NFLOW_STEPPER",
+  "initializeServiceName":"ExampleNflowStepperInitializerService",
+  "initializeScript": "/example-plugin-1.0/initialize.js"
+
+}

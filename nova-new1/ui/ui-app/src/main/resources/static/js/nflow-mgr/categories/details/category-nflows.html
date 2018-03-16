@@ -1,0 +1,41 @@
+<vertical-section-layout allow-edit="false" show-vertical-check="true" section-title="Related Nflows">
+    <readonly-section>
+        <md-list layout-fill class="list-item-table list-condensed" id="policy-list" ng-if="vm.model.relatedNflowSummaries != null && vm.model.relatedNflowSummaries.length > 0">
+            <md-list-item>
+                <div layout="row" layout-fill>
+                    <div flex="50" class="md-list-item-text hint">
+                        Name
+                    </div>
+                    <div flex="10" class="md-list-item-text hint">
+                        Active
+                    </div>
+                    <div flex="40" class="md-list-item-text hint">
+                        Last Modified
+                    </div>
+                </div>
+            </md-list-item>
+            <md-list-item ng-repeat="nflow in vm.model.relatedNflowSummaries" >
+                <div layout="row" class="hover" layout-fill ng-click="vm.onNflowClick(nflow)">
+                    <div flex="50" class="md-list-item-text">
+                        <md-input-container class="md-block" flex-gt-sm>
+                            <div>{{nflow.nflowName}}</div>
+                        </md-input-container>
+                    </div>
+                    <div flex="10" class="md-list-item-text ">
+                        <ng-md-icon icon="check"></ng-md-icon>
+                    </div>
+                    <div flex="40" class="md-list-item-text ">
+                        {{nflow.updateDate | date : 'MM/dd/yyyy hh:mm:ss'}}
+                    </div>
+                </div>
+            </md-list-item>
+        </md-list>
+        <div ng-if="vm.model.loadingRelatedNflows">
+            Loading ...<br/>
+            <md-progress-circular md-mode="indeterminate"  md-diameter="25px"></md-progress-circular>
+        </div>
+        <div ng-if="!vm.model.loadingRelatedNflows && (vm.model.relatedNflowSummaries == null || vm.model.relatedNflowSummaries.length === 0)">
+            There are no nflows associated with this category
+        </div>
+    </readonly-section>
+</vertical-section-layout>

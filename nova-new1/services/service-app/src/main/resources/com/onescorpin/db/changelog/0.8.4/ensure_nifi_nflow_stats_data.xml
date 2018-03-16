@@ -1,0 +1,53 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<!--
+  #%L
+  nova-service-app
+  %%
+  Copyright (C) 2017 Onescorpin
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+
+  <changeSet id="insert_missing_nifi_nflow_stats" author="sr186054" >
+    <sql >
+      INSERT INTO NIFI_NFLOW_STATS
+      SELECT NAME,ID,0,null,null,null
+      FROM NFLOW where NAME NOT IN(SELECT NAME FROM NIFI_NFLOW_STATS)
+    </sql>
+  </changeSet>
+
+  <changeSet id="update_nflow_id_in_nifi_nflow_stats" author="sr186054" dbms="mysql">
+    <sql >
+      UPDATE NIFI_NFLOW_STATS s
+      INNER JOIN NFLOW f on f.NAME = s.NFLOW_NAME
+      SET s.NFLOW_ID = f.ID
+      WHERE s.NFLOW_ID is null;
+    </sql>
+  </changeSet>
+
+  <changeSet id="update_nflow_id_in_nifi_nflow_stats" author="sr186054" dbms="postgresql,mssql">
+    <sql >
+      UPDATE NIFI_NFLOW_STATS
+      SET NFLOW_ID = f.ID
+      FROM NIFI_NFLOW_STATS as s
+      INNER JOIN NFLOW f on f.NAME = s.NFLOW_NAME
+      WHERE s.NFLOW_ID is null;
+    </sql>
+  </changeSet>
+
+
+</databaseChangeLog>

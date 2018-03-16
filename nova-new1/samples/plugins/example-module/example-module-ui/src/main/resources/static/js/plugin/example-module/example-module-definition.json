@@ -1,0 +1,28 @@
+{
+  "moduleName": "",
+  "moduleJsUrl":"plugin/example-module/module",
+  "states": [
+    {
+      "state": "exampleModule",
+      "url": "/exampleModule",
+      "params": {
+        "name": null
+      }
+    }
+  ],
+  "navigation": [
+    {
+      "toggleGroupName": "NEW_MODULE",
+      "text": "New Module",
+      "narrowText": "New",
+      "links": [
+        {
+          "sref": "exampleModule",
+          "icon": "transform",
+          "text": "Example",
+          "permission": ["accessExample"]
+        }
+      ]
+    }
+  ]
+}
